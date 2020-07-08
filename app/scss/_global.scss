@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Quicksand-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: $bg;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.block {
+	height: 110px;
+	padding: 30px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+	&__title {}
+
+	&__items {}
+}
+
+.btn {
+	cursor: pointer;
+	outline: transparent;
+	border: 1px solid transparent;
+
+	&:focus {
+		border: 1px solid #000;
+	}
+
+	&:active {
+		box-shadow: inset 2px 2px 3px 0 $blue;
+	}
+}

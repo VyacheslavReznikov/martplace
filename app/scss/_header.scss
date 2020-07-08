@@ -1,0 +1,283 @@
+.header {
+
+	&__top {}
+
+	&__top-inner {
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__seller {
+		border-radius: 20px;
+		font-size: 14px;
+		line-height: 28px;
+		color: #fff;
+		background-color: $blue;
+		padding: 4px 18px;
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+		margin-left: auto;
+		margin-right: 45px;
+		transition: all 0.5s;
+
+		&:hover {
+			background-color: $blue-licht;
+		}
+	}
+
+	&__items {
+		margin-right: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		font-size: 0;
+		text-align: center;
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin-right: 25px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #7e8fa1;
+			font-size: 20px;
+			font-family: 'Linearicons-Free';
+		}
+
+		&-alarm {
+			&::before {
+				content: "\e858";
+			}
+		}
+
+		&-email {
+			&::before {
+				content: "\e818";
+			}
+		}
+
+		&-basket {
+			&::before {
+				content: "\e82e";
+			}
+		}
+	}
+
+	&__item-number {
+		position: absolute;
+		top: -16px;
+		right: -16px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 3px 7px;
+
+		border-radius: 50%;
+		background-color: $red;
+		text-align: center;
+		font-family: 'Quicksand-Medium', sans-serif;
+		font-weight: 500;
+		color: #fff;
+		font-size: 14px;
+
+		&-email {
+			background-color: $green;
+		}
+
+		&-basket {
+			background-color: $blue;
+		}
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+
+	&__user-icon {
+		display: block;
+		font-size: 0;
+		text-align: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #7c7979;
+		margin-right: 20px;
+	}
+
+	&__user-info {
+		line-height: 22px;
+	}
+
+	&__user-name {
+		font-family: 'Quicksand-Medium', sans-serif;
+		font-weight: 500;
+		display: block;
+		color: #333;
+	}
+
+	&__user-price {
+		display: block;
+		color: $blue;
+	}
+
+	&__bottom {
+		background-color: #fff;
+	}
+
+	&__bottom-inner {
+		height: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__form-search {
+		width: 360px;
+		height: 46px;
+		padding-left: 25px;
+		padding-right: 85px;
+		border: 1px solid #d9dfe5;
+		border-radius: 20px;
+		outline: transparent;
+
+
+		&:focus {
+			border: 1px solid $blue;
+		}
+
+		&:active {
+			box-shadow: inset 1px 1px 2px $blue-licht;
+		}
+
+		&::placeholder {
+			font-family: 'Quicksand-Regular', sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 30px;
+			color: #898f96;
+		}
+	}
+
+	&__form-btn {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		padding: 22px 28px;
+		border: none;
+		border-radius: 20px;
+		background-color: $blue;
+		color: #fff;
+		font-size: 0;
+		text-align: center;
+		transition: all 0.5s;
+
+		&::before {
+			content: "\e86f";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 15px;
+			font-family: 'Linearicons-Free';
+			color: #fff;
+		}
+
+		&:hover {
+			background-color: $blue-licht;
+		}
+
+		& .lnr-magnifier {
+			font-size: 16px;
+		}
+	}
+}
+
+
+.logo-link {}
+
+.logo-img {}
+
+.menu {
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: 35px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		.font-m {}
+
+		;
+		text-transform: uppercase;
+		color: #333;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $blue;
+		}
+
+		&:active {
+			text-shadow: 1px 1px 1px $blue;
+		}
+	}
+
+	&__burger {
+		display: none;
+		font-size: 0;
+		text-align: center;
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
+		position: relative;
+		width: 30px;
+		height: 30px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 3px;
+			left: 0;
+			width: 30px;
+			height: 5px;
+			border-radius: 5px;
+			background-color: #333;
+			box-shadow: 0 10px 0 0 #333, 0 20px 0 0 #333;
+			transition: all 0.5s;
+		}
+
+		&:hover {
+			&::before {
+				background-color: $blue;
+				box-shadow: 0 10px 0 0 $blue, 0 20px 0 0 $blue;
+			}
+		}
+	}
+}
