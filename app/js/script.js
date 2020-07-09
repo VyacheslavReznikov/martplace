@@ -1,9 +1,9 @@
 $(function() {
 
-	$('.products-slider__inner').slick({
+	$('.weekly__inner').slick({
 		
 		slidesToShow: 1,
-		appendArrows: $('.products-slider__arrows'),
+		appendArrows: $('.weekly__arrows'),
 	})
 
 

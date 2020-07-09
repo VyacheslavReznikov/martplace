@@ -53,15 +53,6 @@ a {
 	}
 
 	&:active {
-		box-shadow: inset 2px 2px 3px 0 $blue;
+		box-shadow: inset 2px 2px 5px 0 $blue;
 	}
 }
-
-
-.test {}
-
-.test-slider {
-	
-}
-
-.test-item {display: flex;}

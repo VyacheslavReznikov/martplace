@@ -12,7 +12,7 @@
 		&-menu {
 			position: absolute;
 			top: 45px;
-			left: -130px;
+			left: -65px;
 			border-radius: 3px;
 			background-color: #fff;
 			box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
@@ -60,7 +60,11 @@
 		}
 	}
 
-	&__filter-text {}
+	&__filter-text {
+		display: inline-block;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
 
 	&__filter-btn {
 		outline: transparent;
@@ -82,11 +86,18 @@
 			background-color: #a3b1c4;
 			border-radius: 50%;
 			box-shadow: 0 8px 0 0 #a3b1c4, 0 16px 0 0 #a3b1c4;
+			transition: all 0.5s;
 		}
 
+		&:hover {
+			&::before {
+				background-color: $blue;
+				box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
+			}
+		}
 	}
 
-	&__filter-btn:hover &__filter-menu {
+	&__filter-text:hover &__filter-menu {
 		visibility: visible;
 	}
 
@@ -108,9 +119,14 @@
 		border: none;
 		border-radius: 20px;
 		margin-right: 6px;
+		transition: all 0.5s;
 
 		&:last-child {
 			margin-right: 0;
+		}
+
+		&:hover {
+			background-color: $blue-licht;
 		}
 	}
 
@@ -128,23 +144,24 @@
 		margin-bottom: 30px;
 	}
 
-	&__item-image {
-		display: block;
-		max-width: 100%;
-		min-height: 230px;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+	&__image {
+		width: 100%;
+		height: 230px;
 		position: relative;
 		overflow: hidden;
 	}
 
-	&__item-mask {
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__mask {
 		position: absolute;
-		top: 50%;
-		left: 50%;
+		width: 100%;
 		height: 0;
-		width: 0;
+		top: 0;
 		background-image: linear-gradient(to left, rgba(6, 116, 236, 0.9) 0%, rgba(61, 94, 215, 0.9) 46%, rgba(115, 71, 193, 0.9) 100%);
 		display: flex;
 		justify-content: center;
@@ -152,7 +169,7 @@
 		visibility: hidden;
 	}
 
-	&__item-mask-link {
+	&__mask-link {
 		text-align: center;
 		display: inline-block;
 		color: #fff;
@@ -163,25 +180,23 @@
 		padding: 15px 30px;
 		margin-right: 22px;
 		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-		transition: all 0.5s;
 
 		&:last-child {
 			margin-right: 0;
 		}
 
 		&:hover {
+			transition: all 0.5s;
 			color: $blue;
 			background-color: #fff;
 		}
 	}
 
-	&__item-image:hover &__item-mask {
+	&__image:hover &__mask {
 		transition: all ease 0.8s;
 		visibility: visible;
-		width: 100%;
 		height: 100%;
-		top: 0;
-		left: 0;
+
 	}
 
 	&__item-content {
@@ -318,7 +333,7 @@
 		text-align: center;
 	}
 
-	&__items-new {
+	&__btn-new {
 		cursor: pointer;
 		border-radius: 40px;
 		padding: 15px 30px;
@@ -328,5 +343,9 @@
 		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 		margin-top: 60px;
 		transition: all 0.5s;
+
+		&:hover {
+			background-color: $blue-licht;
+		}
 	}
 }
