@@ -1,8 +1,7 @@
 $(function() {
 
 	$('.products-slider__inner').slick({
-		// prevArrow: '<button type="button" class="slick-arrow slick-prev"><img src="images/icons/arrow-left.svg" alt=""></button>',
-		// nextArrow: '<button type="button" class="slick-arrow slick-next"><img src="images/icons/arrow-right.svg" alt=""></button>',	
+		
 		slidesToShow: 1,
 		appendArrows: $('.products-slider__arrows'),
 	})
@@ -17,6 +16,12 @@ $(function() {
 		readOnly: true,
 
 	})
+
+	$('.release__filter-btn').on('click', function() {	
+		$('.release__buttons').slideToggle()
+	})
+
+	let mixer = mixitup('.release__wrapper');
 	
 
 
