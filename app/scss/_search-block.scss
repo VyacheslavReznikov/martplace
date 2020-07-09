@@ -77,6 +77,10 @@
 		width: 195px;
 		appearance: none;
 		border: 1px solid #dcdcdc;
+		background-image: url(../images/icons/arrow-down.svg);
+		background-repeat: no-repeat;
+		background-size: 13px;
+		background-position: right 20px top 50%;
 	}
 
 	&__option {}

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MartPlace</title>
 	<link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/jquery.rateyo.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
 	<div class="header">
@@ -19,9 +22,9 @@
 						<img class="logo-img" src="images/logo.png" alt="logo">
 					</a>
 
-					<a class="header__seller btn" href="#">Become a Seller</a>
-
 					<div class="header__items">
+						<a class="header__seller btn" href="#">Become a Seller</a>
+
 						<a class="header__item header__item-alarm" href="#">
 							alarm
 							<span class="header__item-number header__item-number-alarm">25</span>
@@ -39,7 +42,7 @@
 					</div>
 
 					<div class="header__user">
-						<a class="header__user-icon" href="#">avatar</a>
+						<a class="header__user-icon" href="#" style="background-image: url(images/icons/user.jpg);">avatar</a>
 						<div class="header__user-info">
 							<a class="header__user-name" href="#">Taofiq Hakim</a>
 							<span class="header__user-price">$20.45</span>
@@ -87,88 +90,241 @@
 	<main class="main">
 
 		<section class="products"
-		style="background: linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);">
-		<div class="container">
-			<div class="products__content">
-				<div class="products__title">Create Your Own</div>
-				<div class="products__subtitle">Digital Product Marketplace</div>
-				<div class="products__text">
-					MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+			style="background: linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);">
+			<div class="container">
+				<div class="products__content">
+					<div class="products__title">Create Your Own</div>
+					<div class="products__subtitle">Digital Product Marketplace</div>
+					<div class="products__text">
+						MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+					</div>
+					<div class="products__links">
+						<a class="products__link" href="#">View All Products</a>
+						<a class="products__link" href="#">Popular Products</a>
+					</div>
 				</div>
-				<div class="products__links">
-					<a class="products__link" href="#">View All Products</a>
-					<a class="products__link" href="#">Popular Products</a>
+			</div>
+		</section>
+
+		<div class="search-block">
+			<div class="container">
+				<div class="search-block__inner">
+
+					<form class="search-block__form">
+						<div class="search-block__box">
+							<input class="search-block__search" type="text" placeholder="Search your products..." required>
+							<select class="search-block__select">
+								<option class="search-block__option">All Categories</option>
+								<option class="search-block__option">WordPress</option>
+								<option class="search-block__option">Site Template</option>
+								<option class="search-block__option">PSD Template</option>
+								<option class="search-block__option">Joomla</option>
+								<option class="search-block__option">User Interface</option>
+								<option class="search-block__option">Landing Page</option>
+								<option class="search-block__option">Software</option>
+							</select>
+						</div>
+						<button class="search-block__btn" type="submit">Search Now</button>
+					</form>
+
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<div class="search-block">
-		<div class="container">
-			<div class="search-block__inner">
+		<section class="features">
+			<div class="container">
+				<div class="features__inner">
 
-				<form class="search-block__form">
-					<div class="search-block__box">
-						<input class="search-block__search" type="text" placeholder="Search your products..." required>
-						<select class="search-block__select">						
-							<option class="search-block__option">All Categories</option>
-							<option class="search-block__option">Any Categories</option>
-						</select>
+					<div class="features__item">
+						<a class="features__image" style="background-image: url(images/features/01.png);" href="#"></a>
+						<a class="features__title" href="#">Best UX Research</a>
+						<div class="features__text">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diam
+							congue is laoreet elit metus.
+						</div>
 					</div>
-					<button class="search-block__btn" type="submit">Search Now</button>
-				</form>
 
+					<div class="features__item">
+						<a class="features__image" style="background-image: url(images/features/02.png);" href="#"></a>
+						<a class="features__title" href="#">Fully Responsive</a>
+						<div class="features__text">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diam
+							congue is laoreet elit metus.
+						</div>
+					</div>
+
+					<div class="features__item">
+						<a class="features__image" style="background-image: url(images/features/03.png);" href="#"></a>
+						<a class="features__title" href="#">Buy & Sell Easily</a>
+						<div class="features__text">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diam
+							congue is laoreet elit metus.
+						</div>
+					</div>
+
+
+				</div>
 			</div>
-		</div>
-	</div>
+		</section>
 
-	<section class="features">
-		<div class="container">
-			<div class="features__inner">
-
-				<div class="features__item">
-					<a class="features__image" style="background-image: url(images/features/01.png);" href="#"></a>
-					<a class="features__title" href="#">Best UX Research</a>
-					<div class="features__text">
-						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-						the mattis, leo quam aliquet diam
-						congue is laoreet elit metus.
+		<section class="products-slider">
+			<div class="container">
+				<div class="products-slider__block block">
+					<div class="block__title">Weekly Featured Products</div>
+					<div class="block__items">
+						<div class="products-slider__arrows"></div>
 					</div>
 				</div>
 
-				<div class="features__item">
-					<a class="features__image" style="background-image: url(images/features/02.png);" href="#"></a>
-					<a class="features__title" href="#">Fully Responsive</a>
-					<div class="features__text">
-						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-						the mattis, leo quam aliquet diam
-						congue is laoreet elit metus.
+				<div class="products-slider__inner">
+
+					<div class="products-slider__item">
+
+						<div class="products-slider__image" style="background-image: url(images/slider/slide.jpg);">
+							<div class="products-slider__mask">
+								<a class="products-slider__mask-link" href="#">More Info</a>
+								<a class="products-slider__mask-link" href="#">Live Demo</a>
+							</div>
+						</div>
+
+						<div class="products-slider__content">
+							<div class="products-slider__title">One Page Resume Template</div>
+							<div class="products-slider__links">
+								<a class="products-slider__user" href="#">
+									<span class="products-slider__user-img" style="background-image: url(images/icons/user.jpg);"></span>
+									<span class="products-slider__user-name">AazzTech</span>
+								</a>
+								<a class="products-slider__category" href="#">
+									<span class="products-slider__category-text">WordPress</span>
+								</a>
+							</div>
+							<div class="products-slider__text">
+								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+								aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+								leo quam aliquet congue justo ut scelerisque.
+							</div>
+							<div class="products-slider__links">
+								<a class="products-slider__link" href="#">website</a>
+								<a class="products-slider__link" href="#">piugin</a>
+								<a class="products-slider__link" href="#">landing page</a>
+							</div>
+							<div class="products-slider__items">
+								<span class="products-slider__price">$10 - $50</span>
+								<button class="products-slider__like btn" type="button">46</button>
+								<button class="products-slider__basket btn" type="button">634</button>
+								<div class="products-slider__stars">
+									<div class="rate-star"></div>
+								</div>
+							</div>
+
+						</div>
 					</div>
-				</div>
 
-				<div class="features__item">
-					<a class="features__image" style="background-image: url(images/features/03.png);" href="#"></a>
-					<a class="features__title" href="#">Buy & Sell Easily</a>
-					<div class="features__text">
-						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-						the mattis, leo quam aliquet diam
-						congue is laoreet elit metus.
+					<div class="products-slider__item">
+
+						<div class="products-slider__image" style="background-image: url(images/slider/slide.jpg);">
+							<div class="products-slider__mask">
+								<a class="products-slider__mask-link" href="#">More Info</a>
+								<a class="products-slider__mask-link" href="#">Live Demo</a>
+							</div>
+						</div>
+
+						<div class="products-slider__content">
+							<div class="products-slider__title">One Page Resume Template</div>
+							<div class="products-slider__links">
+								<a class="products-slider__user" href="#"></a>
+								<a class="products-slider__name" href="#">AazzTech</a>
+								<a class="products-slider__category" href="#">
+									<span class="products-slider__category-text">WordPress</span>
+								</a>
+							</div>
+
+							<div class="products-slider__text">
+								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+								aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+								leo quam aliquet congue justo ut scelerisque.
+							</div>
+
+							<div class="products-slider__links">
+								<a class="products-slider__link" href="#">website</a>
+								<a class="products-slider__link" href="#">piugin</a>
+								<a class="products-slider__link" href="#">landing page</a>
+							</div>
+
+							<div class="products-slider__items">
+								<span class="products-slider__price">$10 - $50</span>
+								<button class="products-slider__like" type="button">like</button>
+								<a class="products-slider__basket" href="#">634</a>
+								<div class="products-slider__stars">
+									<div class="rate-star"></div>
+								</div>
+							</div>
+
+						</div>
+
 					</div>
+
+					<div class="products-slider__item">
+
+						<div class="products-slider__image" style="background-image: url(images/slider/slide.jpg);">
+							<div class="products-slider__mask">
+								<a class="products-slider__mask-link" href="#">More Info</a>
+								<a class="products-slider__mask-link" href="#">Live Demo</a>
+							</div>
+						</div>
+
+						<div class="products-slider__content">
+							<div class="products-slider__title">One Page Resume Template</div>
+							<div class="products-slider__links">
+								<a class="products-slider__user" href="#"></a>
+								<a class="products-slider__name" href="#">AazzTech</a>
+								<a class="products-slider__category" href="#">
+									<span class="products-slider__category-text">WordPress</span>
+								</a>
+							</div>
+
+							<div class="products-slider__text">
+								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+								aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+								leo quam aliquet congue justo ut scelerisque.
+							</div>
+
+							<div class="products-slider__links">
+								<a class="products-slider__link" href="#">website</a>
+								<a class="products-slider__link" href="#">piugin</a>
+								<a class="products-slider__link" href="#">landing page</a>
+							</div>
+
+							<div class="products-slider__items">
+								<span class="products-slider__price">$10 - $50</span>
+								<button class="products-slider__like" type="button">like</button>
+								<a class="products-slider__basket" href="#">634</a>
+								<div class="products-slider__stars">
+									<div class="rate-star"></div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
 				</div>
-
-
 			</div>
-		</div>
-	</section>
 
+		</section>
 
 
 	</main>
-	
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.rateyo.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 </html>
