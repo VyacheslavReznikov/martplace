@@ -12,7 +12,6 @@ $(function() {
 		spasing: '5px',
 		starWidth: '15px',
 		ratedFill: '#ffc000',
-		// normalFill: '#fff',	
 		readOnly: true,
 
 	})
