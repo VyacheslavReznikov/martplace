@@ -1,0 +1,64 @@
+.support {
+	background-color: #fff;
+
+	&__inner {
+		display: flex;
+	}
+
+	&__item {
+		text-align: center;
+		padding: 64px 0;
+		width: 50%;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 1px;
+			height: 100%;
+			background-color: #ececec;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__image {
+		height: 120px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 150px 120px;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-size: 24px;
+		color: #000;
+	}
+
+	&__item--blue {
+		.support__image {
+			background-image: url(../images/support/Icon_1.png);
+		}
+
+		.support__color {
+			color: $blue;
+		}
+	}
+
+
+	&__item--violet {
+		.support__image {
+			background-image: url(../images/support/Icon_2.png);
+		}
+
+		.support__color {
+			color: $violet;
+		}
+	}
+}

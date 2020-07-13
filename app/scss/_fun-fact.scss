@@ -1,11 +1,10 @@
 .fun-fact {
-	background-color: #212225;
-	padding: 95px 0;
+	background-color: #212225;	
 
 	&__inner {
+		padding: 90px 0;
 		display: flex;
 		justify-content: space-around;
-		min-width: 350px;
 	}
 
 	&__item {
@@ -73,7 +72,6 @@
 			content: "\e82b";
 		}
 	}
-
 
 	&__number {
 		font-size: 36px;
