@@ -1,5 +1,5 @@
 .release {
-	padding: 120px 0;
+	padding: 120px 0 100px;
 	background-color: #f6f7fb;
 
 	&__block {
@@ -8,79 +8,23 @@
 
 	&__filter {
 		position: relative;
-
-		&-menu {
-			position: absolute;
-			top: 45px;
-			left: -65px;
-			border-radius: 3px;
-			background-color: #fff;
-			box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-			min-width: 183px;
-			min-height: 179px;
-			padding: 28px;
-			z-index: 2;
-
-			visibility: hidden;
-
-			transition: all 0.5s;
-
-			&::before {
-				content: "";
-				position: absolute;
-				top: -14px;
-				right: 27px;
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 0 8px 18px 8px;
-				border-color: transparent transparent #fff transparent;
-			}
-		}
-
-		&-menu-list {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		&-menu-item {}
-
-		&-menu-link {
-			display: block;
-			font-size: 15px;
-			line-height: 28px;
-			color: #747b86;
-			transition: all 0.3s;
-
-			&:hover {
-				color: $blue;
-
-			}
-		}
-	}
-
-	&__filter-text {
-		display: inline-block;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	&__filter-btn {
-		outline: transparent;
-		width: 30px;
-		height: 30px;
 		cursor: pointer;
+		padding: 0 35px;
+		color: $grey;
+		line-height: 32px;
 		border: none;
 		background-color: transparent;
-		font-size: 0;
-		text-align: center;
 		position: relative;
 
-		&::before {
+		&::after {
 			content: "";
 			position: absolute;
-			top: 0;
+			right: 0;
+			top: 7px;
+			width: 4px;
 			width: 4px;
 			height: 4px;
 			background-color: #a3b1c4;
@@ -90,262 +34,113 @@
 		}
 
 		&:hover {
-			&::before {
+			&::after {
 				background-color: $blue;
 				box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
 			}
 		}
 	}
 
-	&__filter-text:hover &__filter-menu {
-		visibility: visible;
-	}
-
-	&__buttons {
-		display: none;
-		height: 92px;
-		padding: 30px;
-		box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
-		border-radius: 4px;
-		background-color: #fff;
-		margin-bottom: 50px;
-	}
-
-	&__btn {
-		cursor: pointer;
-		padding: 10px 20px;
-		font-size: 15px;
-		background-color: #f1f3f6;
-		border: none;
-		border-radius: 20px;
-		margin-right: 6px;
-		transition: all 0.5s;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		&:hover {
-			background-color: $blue-licht;
-		}
-	}
-
-	&__items {
+	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
-	&__item {
-		width: 360px;
-		border-radius: 4px;
-		background-color: rgb(255, 255, 255);
-		box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-		margin-bottom: 30px;
-	}
-
-	&__image {
-		width: 100%;
-		height: 230px;
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
-	&__mask {
+	&__menu-list {
+		display: none;
+		z-index: 2;
+		margin: 0;
+		padding: 0;
+		list-style: none;
 		position: absolute;
-		width: 100%;
-		height: 0;
-		top: 0;
-		background-image: linear-gradient(to left, rgba(6, 116, 236, 0.9) 0%, rgba(61, 94, 215, 0.9) 46%, rgba(115, 71, 193, 0.9) 100%);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		visibility: hidden;
+		top: 50px;
+		right: -25px;
+		min-width: 185px;
+		padding: 30px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -14px;
+			right: 20px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 8px 18px 8px;
+			border-color: transparent transparent #fff transparent;
+		}
 	}
 
-	&__mask-link {
-		text-align: center;
-		display: inline-block;
-		color: #fff;
-		font-weight: 400;
-		font-size: 16px;
-		border: 1px solid #fff;
+	&__menu-btn {
+		cursor: pointer;
+		display: block;
+		width: 100%;
+		border: none;
+		background-color: transparent;
+		color: $grey;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: left;
+		transition: all 0.3s;
+		margin-bottom: 5px;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	&__buttons {
+		position: relative;
+		height: 92px;
+		padding: 30px;
+		box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+		border-radius: 4px;
+		overflow: hidden;
+		background-color: #fff;
+		margin-bottom: 50px;
+	}
+
+	&__btn {
+		font-size: 15px;
+		line-height: 30px;
+		color: $grey;
+		padding: 0 20px;
 		border-radius: 40px;
-		padding: 15px 30px;
-		margin-right: 22px;
-		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+		margin-right: 2px;
 
 		&:last-child {
 			margin-right: 0;
 		}
 
+		transition: all 0.3s;
+
 		&:hover {
-			transition: all 0.5s;
-			color: $blue;
-			background-color: #fff;
+			background-color: $sky;
 		}
 	}
-
-	&__image:hover &__mask {
-		transition: all ease 0.8s;
-		visibility: visible;
-		height: 100%;
-
-	}
-
-	&__item-content {
-		padding: 30px 0 0;
-	}
-
-	&__item-body {
-		padding: 0 30px;
-	}
-
-	&__item-title {
-		font-size: 20px;
-		font-weight: 500;
-		color: #000;
-		margin-bottom: 20px;
-	}
-
-	&__item-links {
-		display: flex;
-		align-items: center;
-		margin-bottom: 35px;
-	}
-
-	&__item-user {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-right: 10px;
-
-		&-img {
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
-			margin-right: 10px;
-		}
-
-		&-name {
-			font-size: 15px;
-			margin-right: 20px;
-			color: #000;
-		}
-	}
-
-	&__item-category {
-		font-size: 15px;
-		color: $violet;
-	}
-
-	&__item-category-text {
-		display: inline-block;
-		padding-left: 25px;
-		position: relative;
-		background-repeat: no-repeat;
-		background-position: left;
-		background-size: 15px 17px;
-
-		&::before {
-			content: "";
-			position: absolute;
-			left: 0;
-		}
-	}
-
-	&__item-text {
-		margin-bottom: 35px;
-		line-height: 30px;
-		color: #555;
-	}
-
-	&__item-box {
-		padding: 0 30px;
-		height: 62px;
-		border-top: 1px solid #ececec;
-		display: flex;
-		align-items: center;
-	}
-
-	&__item-price {
-		font-weight: 700;
-		font-size: 15px;
-		color: $blue;
-		background-color: #e6f1fd;
-		padding: 8px 20px;
-		border-radius: 20px;
-		margin-right: 15px;
-	}
-
-	&__item-like {
-		min-width: 45px;
-		padding-left: 25px;
-		position: relative;
-		border: none;
-		background-color: transparent;
-		margin-right: 5px;
-
-
-		&::before {
-			content: "\e813";
-			position: absolute;
-			font-family: 'Linearicons-Free';
-			font-size: 15px;
-			color: $violet;
-			top: 0;
-			left: 0;
-		}
-	}
-
-	&__item-stars {}
-
-	&__item-basket {
-		min-width: 45px;
-		padding-left: 25px;
-		position: relative;
-		border: none;
-		background-color: transparent;
-		margin-left: auto;
-		color: $blue;
-
-		&::before {
-			content: "\e82e";
-			position: absolute;
-			font-family: 'Linearicons-Free';
-			font-size: 15px;
-			color: $blue;
-			top: 0;
-			left: 0;
-		}
-	}
-
-	&__items-bottom {
+	&__items-bottom	{
 		text-align: center;
 	}
 
 	&__btn-new {
-		cursor: pointer;
-		border-radius: 40px;
-		padding: 15px 30px;
-		border: none;
+		margin-top: 35px;
 		background-color: $blue;
 		color: #fff;
-		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-		margin-top: 60px;
-		transition: all 0.5s;
-
-		&:hover {
-			background-color: $blue-licht;
-		}
+		padding: 15px 30px;
+		border-radius: 40px;
 	}
+}
+
+.mixitup-control-active {
+	background-color: $blue;
+	color: #fff;
+}
+
+.release__menu-btn.mixitup-control-active {
+	background-color: transparent;
+	color: $blue;
 }

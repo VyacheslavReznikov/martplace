@@ -11,628 +11,640 @@
 </head>
 
 <body>
+	<div class="wrapper">
+		<div class="content">
 
-	<div class="header">
-		<div class="header__top">
-			<div class="container">
-				<div class="header__top-inner">
+			<header class="header">
+				<div class="header__top">
+					<div class="container">
+						<div class="header__top-inner">
 
-					<a class="logo-link" href="#">
-						<img class="logo-img" src="images/logo.png" alt="logo">
-					</a>
+							<a class="header__logo-link" href="#">
+								<img class="logo-img" src="images/header-logo.png" alt="logo">
+							</a>
 
-					<div class="header__items">
-						<a class="header__seller btn" href="#">Become a Seller</a>
+							<div class="header__items">
+								<a class="header__seller" href="#">Become a Seller</a>
 
-						<a class="header__item header__item-alarm" href="#">
-							alarm
-							<span class="header__item-number header__item-number-alarm">25</span>
-						</a>
+								<div class="header__links">
+									<a class="header__link lnr lnr-alarm header__link--alarm" href="#">
+										alarm
+										<span class="header__number">25</span>
+									</a>
 
-						<a class="header__item header__item-email" href="#">
-							alarm
-							<span class="header__item-number header__item-number-email">6</span>
-						</a>
+									<a class="header__link lnr lnr-envelope header__link--email" href="#">
+										email
+										<span class="header__number">6</span>
+									</a>
 
-						<a class="header__item header__item-basket" href="#">
-							alarm
-							<span class="header__item-number header__item-number-basket">2</span>
-						</a>
-					</div>
+									<a class="header__link lnr lnr-cart header__link--basket" href="#">
+										basket
+										<span class="header__number">2</span>
+									</a>
+								</div>
 
-					<div class="header__user">
-						<a class="header__user-icon" href="#" style="background-image: url(images/icons/user.jpg);">avatar</a>
-						<div class="header__user-info">
-							<a class="header__user-name" href="#">Taofiq Hakim</a>
-							<span class="header__user-price">$20.45</span>
+								<a class="header__user user">
+									<div class="user__icon">
+										<img class="user__img" src="images/icons/user.jpg" alt="user">
+									</div>
+									<div class="user__info">
+										<span class="user__name">Taofiq Hakim</span>
+										<span class="user__money">$20.45</span>
+									</div>
+								</a>
+
+							</div>
+
+
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div class="header__bottom">
-			<div class="container">
-				<div class="header__bottom-inner">
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__bottom-inner">
 
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a class="menu__link" href="#">home</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">all products</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">wordpress</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">festures</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">pages</a>
-							</li>
-						</ul>
-						<button class="menu__burger">burger</button>
-					</nav>
+							<nav class="menu">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a class="menu__link" href="#">home</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">all products</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">wordpress</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">festures</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">pages</a>
+									</li>
+								</ul>
+								<button class="menu__burger">burger</button>
+							</nav>
 
-					<form class="header__form">
-						<input class="header__form-search" type="text" placeholder="Search product here..." required>
-						<button class="header__form-btn" type="submit">search</button>
-					</form>
+							<form class="header__form">
+								<input class="header__form-search" type="search" placeholder="Search product here..." required>
+								<button class="header__form-btn" type="submit">search</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+
+				<section class="main-screen">
+					<div class="container">
+						<div class="main-screen__content">
+							<div class="main-screen__title">Create Your Own</div>
+							<div class="main-screen__subtitle">Digital Product Marketplace</div>
+							<div class="main-screen__text">
+								MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+							</div>
+							<div class="main-screen__links">
+								<a class="main-screen__link btn" href="#">View All Products</a>
+								<a class="main-screen__link btn" href="#">Popular Products</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="search">
+					<div class="container">
+						<div class="search__inner">
+
+							<form class="search__form">
+								<div class="search__box">
+									<input class="search__search" type="search" placeholder="Search your products..." required>
+									<select class="search__select">
+										<option class="search__option">All Categories</option>
+										<option class="search__option">WordPress</option>
+										<option class="search__option">Site Template</option>
+										<option class="search__option">PSD Template</option>
+										<option class="search__option">Joomla</option>
+										<option class="search__option">User Interface</option>
+										<option class="search__option">Landing Page</option>
+										<option class="search__option">Software</option>
+									</select>
+								</div>
+								<button class="search__btn" type="submit">Search Now</button>
+							</form>
+
+						</div>
+					</div>
 				</div>
 
-			</div>
+				<section class="features">
+					<div class="container">
+						<div class="features__inner">
+
+							<div class="features__item">
+								<div class="features__image">
+									<a class="features__link features__link--1" href="#"></a>
+								</div>
+								<a class="features__title" href="#">Best UX Research</a>
+								<div class="features__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</div>
+
+							<div class="features__item">
+								<div class="features__image">
+									<a class="features__link features__link--2" href="#"></a>
+								</div>
+								<a class="features__title" href="#">Fully Responsive</a>
+								<div class="features__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</div>
+
+							<div class="features__item">
+								<div class="features__image">
+									<a class="features__link features__link--3" href="#"></a>
+								</div>
+								<a class="features__title" href="#">Buy & Sell Easily</a>
+								<div class="features__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</div>
+
+
+
+
+						</div>
+					</div>
+				</section>
+
+				<section class="weekly">
+					<div class="container">
+						<div class="weekly__block block">
+							<div class="block__title">Weekly Featured Products</div>
+							<div class="block__items">
+								<div class="weekly__arrows"></div>
+							</div>
+						</div>
+
+						<div class="weekly__inner">
+
+							<section class="product">
+								<div class="product__item">
+
+									<div class="product__image">
+										<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+										<div class="product__mask">
+											<a class="product__mask-link" href="#">More Info</a>
+											<a class="product__mask-link" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<a class="product__title" href="#">One Page Resume Template</a>
+										<div class="product__box">
+											<a class="product__user" href="#">
+												<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+												<span class="product__user-name">AazzTech</span>
+											</a>
+											<a class="product__category icon-wordpress" href="#">WordPress</a>
+										</div>
+
+										<div class="product__text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+											leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis,
+											leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="product__links">
+											<a class="product__link" href="#">website</a>
+											<a class="product__link" href="#">piugin</a>
+											<a class="product__link" href="#">landing page</a>
+										</div>
+										<div class="product__items">
+											<span class="product__price">$10 - $50</span>
+											<button class="product__like lnr lnr-heart" type="button">46</button>
+											<button class="product__basket lnr lnr-cart" type="button">634</button>
+											<div class="product__stars">
+												<div class="rate-star"></div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</section>
+
+							<div class="product">
+								<div class="product__item">
+
+									<div class="product__image">
+										<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+										<div class="product__mask">
+											<a class="product__mask-link" href="#">More Info</a>
+											<a class="product__mask-link" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<a class="product__title" href="#">One Page Resume Template</a>
+										<div class="product__box">
+											<a class="product__user" href="#">
+												<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+												<span class="product__user-name">AazzTech</span>
+											</a>
+											<a class="product__category icon-wordpress" href="#">WordPress</a>
+										</div>
+
+										<div class="product__text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+											leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis,
+											leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="product__links">
+											<a class="product__link" href="#">website</a>
+											<a class="product__link" href="#">piugin</a>
+											<a class="product__link" href="#">landing page</a>
+										</div>
+										<div class="product__items">
+											<span class="product__price">$10 - $50</span>
+											<button class="product__like lnr lnr-heart" type="button">46</button>
+											<button class="product__basket lnr lnr-cart" type="button">634</button>
+											<div class="product__stars">
+												<div class="rate-star"></div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="product">
+								<div class="product__item">
+
+									<div class="product__image">
+										<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+										<div class="product__mask">
+											<a class="product__mask-link" href="#">More Info</a>
+											<a class="product__mask-link" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<a class="product__title" href="#">One Page Resume Template</a>
+										<div class="product__box">
+											<a class="product__user" href="#">
+												<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+												<span class="product__user-name">AazzTech</span>
+											</a>
+											<a class="product__category icon-wordpress" href="#">WordPress</a>
+										</div>
+
+										<div class="product__text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+											leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis,
+											leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="product__links">
+											<a class="product__link" href="#">website</a>
+											<a class="product__link" href="#">piugin</a>
+											<a class="product__link" href="#">landing page</a>
+										</div>
+										<div class="product__items">
+											<span class="product__price">$10 - $50</span>
+											<button class="product__like lnr lnr-heart" type="button">46</button>
+											<button class="product__basket lnr lnr-cart" type="button">634</button>
+											<div class="product__stars">
+												<div class="rate-star"></div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="release">
+					<div class="container">
+						<div class="release__inner">
+
+							<div class="release__block block">
+								<div class="block__title">Newest Release Products</div>
+								<div class="block__items">
+									<div class="release__filter">
+										<button class="release__filter-btn" type="button">Filter by:</button>
+										<div class="release__menu-list">
+											<button class="release__menu-btn" type="button" data-sort="random">Trending items</button>
+											<button class="release__menu-btn" type="button" data-sort="random">Best seller</button>
+											<button class="release__menu-btn" type="button" data-sort="random">Best rating</button>
+											<button class="release__menu-btn" type="button" data-sort="random">Low price</button>
+											<button class="release__menu-btn" type="button" data-sort="random">High price</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="release__buttons">
+								<button class="release__btn btn" type="button" data-filter=".category-plugin">Plugins</button>
+								<button class="release__btn btn" type="button" data-filter=".category-wordpress">WordPress</button>
+								<button class="release__btn btn" type="button" data-filter=".category-site">Site Template</button>
+								<button class="release__btn btn" type="button" data-filter=".category-psd">PSD Template</button>
+								<button class="release__btn btn" type="button" data-filter=".category-joomla">Joomla</button>
+								<button class="release__btn btn" type="button" data-filter=".category-interface">User Interface</button>
+								<button class="release__btn btn" type="button" data-filter=".category-page">Landing Page</button>
+								<button class="release__btn btn" type="button" data-filter=".category-software">Software</button>
+							</div>
+
+							<div class="release__wrapper">
+
+								<section class="product product--small mix category-plugin category-wordpress">
+									<div class="product__item">
+
+										<div class="product__image">
+											<img class="product__img" src="images/content/plugin.jpg" alt="wordpress">
+											<div class="product__mask">
+												<a class="product__mask-link" href="#">More Info</a>
+												<a class="product__mask-link" href="#">Live Demo</a>
+											</div>
+										</div>
+
+										<div class="product__content">
+
+											<a class="product__title" href="#">E-commerce Shopping Cart</a>
+											<div class="product__box">
+												<a class="product__user" href="#">
+													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+													<span class="product__user-name">Theme-Valley</span>
+												</a>
+												<a class="product__category icon-wordpress" href="#">Plugin</a>
+											</div>
+
+											<div class="product__text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the mattis, leo quam aliquet congue.
+											</div>
+
+											<div class="product__items">
+												<span class="product__price">$20</span>
+												<button class="product__like lnr lnr-heart" type="button">90</button>
+												<div class="product__stars">
+													<div class="rate-star"></div>
+												</div>
+												<button class="product__basket lnr lnr-cart" type="button">246</button>
+											</div>
+
+										</div>
+
+									</div>
+								</section>
+
+								<section class="product product--small mix category-site category-interface category-psd">
+									<div class="product__item">
+
+										<div class="product__image">
+											<img class="product__img" src="images/content/psd.jpg" alt="psd">
+											<div class="product__mask">
+												<a class="product__mask-link" href="#">More Info</a>
+												<a class="product__mask-link" href="#">Live Demo</a>
+											</div>
+										</div>
+
+										<div class="product__content">
+
+											<a class="product__title" href="#">Marketify Coffee Shop</a>
+											<div class="product__box">
+												<a class="product__user" href="#">
+													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+													<span class="product__user-name">EchoTheme</span>
+												</a>
+												<a class="product__category icon-document-file-psd" href="#">PSD</a>
+											</div>
+
+											<div class="product__text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the mattis, leo quam aliquet congue.
+											</div>
+
+											<div class="product__items">
+												<span class="product__price">$18</span>
+												<button class="product__like lnr lnr-heart" type="button">48</button>
+												<div class="product__stars">
+													<div class="rate-star"></div>
+												</div>
+												<button class="product__basket lnr lnr-cart" type="button">50</button>
+											</div>
+
+										</div>
+
+									</div>
+								</section>
+
+								<section class="product product--small mix category-software">
+									<div class="product__item">
+
+										<div class="product__image">
+											<img class="product__img" src="images/content/html.jpg" alt="html">
+											<div class="product__mask">
+												<a class="product__mask-link" href="#">More Info</a>
+												<a class="product__mask-link" href="#">Live Demo</a>
+											</div>
+										</div>
+
+										<div class="product__content">
+
+											<a class="product__title" href="#">Bryson - Portfolio Template</a>
+											<div class="product__box">
+												<a class="product__user" href="#">
+													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+													<span class="product__user-name">Artcorner</span>
+												</a>
+												<a class="product__category icon-html5" href="#">HTML</a>
+											</div>
+
+											<div class="product__text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the mattis, leo quam aliquet congue.
+											</div>
+
+											<div class="product__items">
+												<span class="product__price">$10</span>
+												<button class="product__like lnr lnr-heart" type="button">56</button>
+												<div class="product__stars">
+													<div class="rate-star"></div>
+												</div>
+												<button class="product__basket lnr lnr-cart" type="button">68</button>
+											</div>
+
+										</div>
+
+									</div>
+								</section>
+
+								<section class="product product--small mix category-wordpress category-new">
+									<div class="product__item">
+
+										<div class="product__image">
+											<img class="product__img" src="images/content/plugin.jpg" alt="wordpress">
+											<div class="product__mask">
+												<a class="product__mask-link" href="#">More Info</a>
+												<a class="product__mask-link" href="#">Live Demo</a>
+											</div>
+										</div>
+
+										<div class="product__content">
+
+											<a class="product__title" href="#">E-commerce Shopping Cart</a>
+											<div class="product__box">
+												<a class="product__user" href="#">
+													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+													<span class="product__user-name">Theme-Valley</span>
+												</a>
+												<a class="product__category icon-wordpress" href="#">Plugin</a>
+											</div>
+
+											<div class="product__text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the mattis, leo quam aliquet congue.
+											</div>
+
+											<div class="product__items">
+												<span class="product__price">$20</span>
+												<button class="product__like lnr lnr-heart" type="button">90</button>
+												<div class="product__stars">
+													<div class="rate-star"></div>
+												</div>
+												<button class="product__basket lnr lnr-cart" type="button">246</button>
+											</div>
+
+										</div>
+
+									</div>
+								</section>
+
+								<section class="product product--small mix category-psd category-new">
+									<div class="product__item">
+
+										<div class="product__image">
+											<img class="product__img" src="images/content/psd.jpg" alt="psd">
+											<div class="product__mask">
+												<a class="product__mask-link" href="#">More Info</a>
+												<a class="product__mask-link" href="#">Live Demo</a>
+											</div>
+										</div>
+
+										<div class="product__content">
+
+											<a class="product__title" href="#">Marketify Coffee Shop</a>
+											<div class="product__box">
+												<a class="product__user" href="#">
+													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+													<span class="product__user-name">EchoTheme</span>
+												</a>
+												<a class="product__category icon-document-file-psd" href="#">PSD</a>
+											</div>
+
+											<div class="product__text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the mattis, leo quam aliquet congue.
+											</div>
+
+											<div class="product__items">
+												<span class="product__price">$18</span>
+												<button class="product__like lnr lnr-heart" type="button">48</button>
+												<div class="product__stars">
+													<div class="rate-star"></div>
+												</div>
+												<button class="product__basket lnr lnr-cart" type="button">50</button>
+											</div>
+
+										</div>
+
+									</div>
+								</section>
+
+								<section class="product product--small mix category-joomla category-new">
+									<div class="product__item">
+
+										<div class="product__image">
+											<img class="product__img" src="images/content/html.jpg" alt="html">
+											<div class="product__mask">
+												<a class="product__mask-link" href="#">More Info</a>
+												<a class="product__mask-link" href="#">Live Demo</a>
+											</div>
+										</div>
+
+										<div class="product__content">
+
+											<a class="product__title" href="#">Bryson - Portfolio Template</a>
+											<div class="product__box">
+												<a class="product__user" href="#">
+													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+													<span class="product__user-name">Artcorner</span>
+												</a>
+												<a class="product__category icon-html5" href="#">HTML</a>
+											</div>
+
+											<div class="product__text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the mattis, leo quam aliquet congue.
+											</div>
+
+											<div class="product__items">
+												<span class="product__price">$10</span>
+												<button class="product__like lnr lnr-heart" type="button">56</button>
+												<div class="product__stars">
+													<div class="rate-star"></div>
+												</div>
+												<button class="product__basket lnr lnr-cart" type="button">68</button>
+											</div>
+
+										</div>
+
+									</div>
+								</section>
+
+							</div>
+
+							<div class="release__items-bottom">
+								<button class="release__btn-new btn" type="button" data-filter=".category-new">All New
+									Products</button>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
 		</div>
+
+		<footer class="footer"></footer>
+
 	</div>
-
-	<main class="main">
-
-		<section class="products"
-			style="background: linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);">
-			<div class="container">
-				<div class="products__content">
-					<div class="products__title">Create Your Own</div>
-					<div class="products__subtitle">Digital Product Marketplace</div>
-					<div class="products__text">
-						MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-					</div>
-					<div class="products__links">
-						<a class="products__link btn" href="#">View All Products</a>
-						<a class="products__link btn" href="#">Popular Products</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="search-block">
-			<div class="container">
-				<div class="search-block__inner">
-
-					<form class="search-block__form">
-						<div class="search-block__box">
-							<input class="search-block__search" type="text" placeholder="Search your products..." required>
-							<select class="search-block__select">
-								<option class="search-block__option">All Categories</option>
-								<option class="search-block__option">WordPress</option>
-								<option class="search-block__option">Site Template</option>
-								<option class="search-block__option">PSD Template</option>
-								<option class="search-block__option">Joomla</option>
-								<option class="search-block__option">User Interface</option>
-								<option class="search-block__option">Landing Page</option>
-								<option class="search-block__option">Software</option>
-							</select>
-						</div>
-						<button class="search-block__btn" type="submit">Search Now</button>
-					</form>
-
-				</div>
-			</div>
-		</div>
-
-		<section class="features">
-			<div class="container">
-				<div class="features__inner">
-
-					<div class="features__item">
-						<a class="features__image" style="background-image: url(images/features/01.png);" href="#"></a>
-						<a class="features__title" href="#">Best UX Research</a>
-						<div class="features__text">
-							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-							the mattis, leo quam aliquet diam
-							congue is laoreet elit metus.
-						</div>
-					</div>
-
-					<div class="features__item">
-						<a class="features__image" style="background-image: url(images/features/02.png);" href="#"></a>
-						<a class="features__title" href="#">Fully Responsive</a>
-						<div class="features__text">
-							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-							the mattis, leo quam aliquet diam
-							congue is laoreet elit metus.
-						</div>
-					</div>
-
-					<div class="features__item">
-						<a class="features__image" style="background-image: url(images/features/03.png);" href="#"></a>
-						<a class="features__title" href="#">Buy & Sell Easily</a>
-						<div class="features__text">
-							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-							the mattis, leo quam aliquet diam
-							congue is laoreet elit metus.
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</section>
-
-		<section class="weekly">
-			<div class="container">
-				<div class="weekly__block block">
-					<div class="block__title">Weekly Featured Products</div>
-					<div class="block__items">
-						<div class="weekly__arrows"></div>
-					</div>
-				</div>
-
-				<div class="weekly__inner">
-
-					<div class="weekly__wrapper">
-						<div class="weekly__item">
-
-							<div class="weekly__image">
-								<img class="weekly__img" src="images/content/wordpress.jpg" alt="wordpress">
-								<div class="weekly__mask">
-									<a class="weekly__mask-link btn" href="#">More Info</a>
-									<a class="weekly__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="weekly__content">
-								<div class="weekly__title">One Page Resume Template</div>
-								<div class="weekly__links">
-									<a class="weekly__user" href="#">
-										<span class="weekly__user-img" style="background-image: url(images/icons/user.jpg);"></span>
-										<span class="weekly__user-name">AazzTech</span>
-									</a>
-									<a class="weekly__category" href="#">
-										<span class="weekly__category-text"
-											style="background-image: url(images/icons/wordpress.svg);">WordPress</span>
-									</a>
-								</div>
-								<div class="weekly__text">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-									mattis,
-									leo quam aliquet congue justo ut scelerisque.
-								</div>
-								<div class="weekly__links">
-									<a class="weekly__link btn" href="#">website</a>
-									<a class="weekly__link btn" href="#">piugin</a>
-									<a class="weekly__link btn" href="#">landing page</a>
-								</div>
-								<div class="weekly__items">
-									<span class="weekly__price">$10 - $50</span>
-									<button class="weekly__like btn" type="button">46</button>
-									<button class="weekly__basket btn" type="button">634</button>
-									<div class="weekly__stars">
-										<div class="rate-star"></div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="weekly__wrapper">
-						<div class="weekly__item">
-
-							<div class="weekly__image">
-								<img class="weekly__img" src="images/content/html.jpg" alt="wordpress">
-								<div class="weekly__mask">
-									<a class="weekly__mask-link btn" href="#">More Info</a>
-									<a class="weekly__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="weekly__content">
-								<div class="weekly__title">One Page Resume Template</div>
-								<div class="weekly__links">
-									<a class="weekly__user" href="#">
-										<span class="weekly__user-img" style="background-image: url(images/icons/user.jpg);"></span>
-										<span class="weekly__user-name">AazzTech</span>
-									</a>
-									<a class="weekly__category" href="#">
-										<span class="weekly__category-text"
-											style="background-image: url(images/icons/wordpress.svg);">WordPress</span>
-									</a>
-								</div>
-								<div class="weekly__text">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-									mattis,
-									leo quam aliquet congue justo ut scelerisque.
-								</div>
-								<div class="weekly__links">
-									<a class="weekly__link btn" href="#">website</a>
-									<a class="weekly__link btn" href="#">piugin</a>
-									<a class="weekly__link btn" href="#">landing page</a>
-								</div>
-								<div class="weekly__items">
-									<span class="weekly__price">$10 - $50</span>
-									<button class="weekly__like btn" type="button">46</button>
-									<button class="weekly__basket btn" type="button">634</button>
-									<div class="weekly__stars">
-										<div class="rate-star"></div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="weekly__wrapper">
-						<div class="weekly__item">
-
-							<div class="weekly__image">
-								<img class="weekly__img" src="images/content/plugin.jpg" alt="wordpress">
-								<div class="weekly__mask">
-									<a class="weekly__mask-link btn" href="#">More Info</a>
-									<a class="weekly__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="weekly__content">
-								<div class="weekly__title">One Page Resume Template</div>
-								<div class="weekly__links">
-									<a class="weekly__user" href="#">
-										<span class="weekly__user-img" style="background-image: url(images/icons/user.jpg);"></span>
-										<span class="weekly__user-name">AazzTech</span>
-									</a>
-									<a class="weekly__category" href="#">
-										<span class="weekly__category-text"
-											style="background-image: url(images/icons/wordpress.svg);">WordPress</span>
-									</a>
-								</div>
-								<div class="weekly__text">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-									mattis,
-									leo quam aliquet congue justo ut scelerisque.
-								</div>
-								<div class="weekly__links">
-									<a class="weekly__link btn" href="#">website</a>
-									<a class="weekly__link btn" href="#">piugin</a>
-									<a class="weekly__link btn" href="#">landing page</a>
-								</div>
-								<div class="weekly__items">
-									<span class="weekly__price">$10 - $50</span>
-									<button class="weekly__like btn" type="button">46</button>
-									<button class="weekly__basket btn" type="button">634</button>
-									<div class="weekly__stars">
-										<div class="rate-star"></div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="release">
-			<div class="container">
-				<div class="release__block block">
-					<div class="block__title">Newest Release Products</div>
-					<div class="block__items">
-						<div class="release__filter">
-							<div class="release__filter-text">Filter by:
-
-								<div class="release__filter-menu">
-									<ul class="release__filter-menu-list">
-										<li class="release__filter-menu-item">
-											<a class="release__filter-menu-link btn" href="#">Trending items</a>
-										</li>
-										<li class="release__filter-menu-item">
-											<a class="release__filter-menu-link btn" href="#">Best seller</a>
-										</li>
-										<li class="release__filter-menu-item">
-											<a class="release__filter-menu-link btn" href="#">Best rating</a>
-										</li>
-										<li class="release__filter-menu-item">
-											<a class="release__filter-menu-link btn" href="#">Low price</a>
-										</li>
-										<li class="release__filter-menu-item">
-											<a class="release__filter-menu-link btn" href="#">High price</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
-							<button class="release__filter-btn" type="button">filter-btn</button>
-
-						</div>
-					</div>
-				</div>
-				<div class="release__wrapper">
-					<div class="release__buttons">
-						<button class="release__btn btn" type="button" data-filter=".category-wordpress">WordPress</button>
-						<button class="release__btn btn" type="button" data-filter=".category-site">Site Template</button>
-						<button class="release__btn btn" type="button" data-filter=".category-plugin">Plugins</button>
-						<button class="release__btn btn" type="button" data-filter=".category-psd">PSD Template</button>
-						<button class="release__btn btn" type="button" data-filter=".category-joomla">Joomla</button>
-						<button class="release__btn btn" type="button" data-filter=".category-interface">User Interface</button>
-						<button class="release__btn btn" type="button" data-filter=".category-page">Landing Page</button>
-						<button class="release__btn btn" type="button" data-filter=".category-software">Software</button>
-					</div>
-
-					<div class="release__items">
-
-						<div class="release__item mix category-plugin">
-
-							<div class="release__image">
-								<img class="release__img" src="images/content/wordpress.jpg" src="" alt="">
-								<div class="release__mask">
-									<a class="release__mask-link btn" href="#">More Info</a>
-									<a class="release__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="release__item-content">
-								<div class="release__item-body">
-									<div class="release__item-title">E-commerce Shopping Cart</div>
-									<div class="release__item-links">
-										<a class="release__item-user" href="#">
-											<span class="release__item-user-img" style="background-image: url(images/icons/user.jpg);"></span>
-											<span class="release__item-user-name">Theme-Valley</span>
-										</a>
-										<a class="release__item-category" href="#">
-											<span class="release__item-category-text"
-												style="background-image: url(images/icons/wordpress.svg);">Plugin</span>
-										</a>
-									</div>
-									<div class="release__item-text">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-										the mattis, leo quam aliquet congue.
-									</div>
-								</div>
-
-								<div class="release__item-box">
-									<span class="release__item-price">$10</span>
-									<button class="release__item-like btn" type="button">46</button>
-
-									<button class="release__item-basket btn" type="button">34</button>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="release__item mix category-psd category-new">
-
-							<div class="release__image">
-								<img class="release__img" src="images/content/html.jpg" src="" alt="">
-								<div class="release__mask">
-									<a class="release__mask-link btn" href="#">More Info</a>
-									<a class="release__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="release__item-content">
-								<div class="release__item-body">
-									<div class="release__item-title">Marketify Coffee Shop</div>
-									<div class="release__item-links">
-										<a class="release__item-user" href="#">
-											<span class="release__item-user-img" style="background-image: url(images/icons/user.jpg);"></span>
-											<span class="release__item-user-name">EchoTheme</span>
-										</a>
-										<a class="release__item-category" href="#">
-											<span class="release__item-category-text"
-												style="background-image: url(images/icons/psd.svg);">PSD</span>
-										</a>
-									</div>
-									<div class="release__item-text">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-										the mattis, leo quam aliquet congue.
-									</div>
-								</div>
-
-								<div class="release__item-box">
-									<span class="release__item-price">$18</span>
-									<button class="release__item-like btn" type="button">48</button>
-
-									<button class="release__item-basket btn" type="button">50</button>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="release__item mix category-software">
-
-							<div class="release__image">
-								<img class="release__img" src="images/content/plugin.jpg" src="" alt="">
-								<div class="release__mask">
-									<a class="release__mask-link btn" href="#">More Info</a>
-									<a class="release__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="release__item-content">
-								<div class="release__item-body">
-									<div class="release__item-title">Bryson - Portfolio Template</div>
-									<div class="release__item-links">
-										<a class="release__item-user" href="#">
-											<span class="release__item-user-img" style="background-image: url(images/icons/user.jpg);"></span>
-											<span class="release__item-user-name">Artcorner</span>
-										</a>
-										<a class="release__item-category" href="#">
-											<span class="release__item-category-text"
-												style="background-image: url(images/icons/psd.svg);">HTML</span>
-										</a>
-									</div>
-									<div class="release__item-text">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-										the mattis, leo quam aliquet congue.
-									</div>
-								</div>
-
-								<div class="release__item-box">
-									<span class="release__item-price">$128</span>
-									<button class="release__item-like btn" type="button">478</button>
-									<div class="release__item-stars">
-										<div class="rate-star"></div>
-									</div>
-									<button class="release__item-basket btn" type="button">153</button>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="release__item mix category-psd category-new">
-
-							<div class="release__image">
-								<img class="release__img" src="images/content/psd.jpg" src="" alt="">
-								<div class="release__mask">
-									<a class="release__mask-link btn" href="#">More Info</a>
-									<a class="release__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="release__item-content">
-								<div class="release__item-body">
-									<div class="release__item-title">E-commerce Shopping Cart</div>
-									<div class="release__item-links">
-										<a class="release__item-user" href="#">
-											<span class="release__item-user-img" style="background-image: url(images/icons/user.jpg);"></span>
-											<span class="release__item-user-name">Theme-Valley</span>
-										</a>
-										<a class="release__item-category" href="#">
-											<span class="release__item-category-text"
-												style="background-image: url(images/icons/wordpress.svg);">Plugin</span>
-										</a>
-									</div>
-									<div class="release__item-text">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-										the mattis, leo quam aliquet congue.
-									</div>
-								</div>
-
-								<div class="release__item-box">
-									<span class="release__item-price">$10</span>
-									<button class="release__item-like btn" type="button">46</button>
-									<div class="release__item-stars">
-										<div class="rate-star"></div>
-									</div>
-									<button class="release__item-basket btn" type="button">34</button>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="release__item mix category-plugin category-wordpress">
-
-							<div class="release__image">
-								<img class="release__img" src="images/content/plugin.jpg" src="" alt="">
-								<div class="release__mask">
-									<a class="release__mask-link btn" href="#">More Info</a>
-									<a class="release__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="release__item-content">
-								<div class="release__item-body">
-									<div class="release__item-title">Marketify Coffee Shop</div>
-									<div class="release__item-links">
-										<a class="release__item-user" href="#">
-											<span class="release__item-user-img" style="background-image: url(images/icons/user.jpg);"></span>
-											<span class="release__item-user-name">EchoTheme</span>
-										</a>
-										<a class="release__item-category" href="#">
-											<span class="release__item-category-text"
-												style="background-image: url(images/icons/psd.svg);">PSD</span>
-										</a>
-									</div>
-									<div class="release__item-text">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-										the mattis, leo quam aliquet congue.
-									</div>
-								</div>
-
-								<div class="release__item-box">
-									<span class="release__item-price">$18</span>
-									<button class="release__item-like btn" type="button">48</button>
-
-									<button class="release__item-basket btn" type="button">50</button>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="release__item mix category-joomla category-new">
-
-							<div class="release__image">
-								<img class="release__img" src="images/content/wordpress.jpg" src="" alt="">
-								<div class="release__mask">
-									<a class="release__mask-link btn" href="#">More Info</a>
-									<a class="release__mask-link btn" href="#">Live Demo</a>
-								</div>
-							</div>
-
-							<div class="release__item-content">
-								<div class="release__item-body">
-									<div class="release__item-title">Bryson - Portfolio Template</div>
-									<div class="release__item-links">
-										<a class="release__item-user" href="#">
-											<span class="release__item-user-img" style="background-image: url(images/icons/user.jpg);"></span>
-											<span class="release__item-user-name">Artcorner</span>
-										</a>
-										<a class="release__item-category" href="#">
-											<span class="release__item-category-text"
-												style="background-image: url(images/icons/psd.svg);">HTML</span>
-										</a>
-									</div>
-									<div class="release__item-text">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-										the mattis, leo quam aliquet congue.
-									</div>
-								</div>
-
-								<div class="release__item-box">
-									<span class="release__item-price">$128</span>
-									<button class="release__item-like btn" type="button">478</button>
-									<div class="release__item-stars">
-										<div class="rate-star"></div>
-									</div>
-									<button class="release__item-basket btn" type="button">153</button>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="release__items-bottom">
-						<button class="release__btn-new btn" type="button" data-filter=".category-new">All New Products</button>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-
-	</main>
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>

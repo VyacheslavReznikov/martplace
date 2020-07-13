@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	height: 100%;
 }
 
 *,
@@ -9,8 +10,8 @@ html {
 }
 
 body {
-	font-family: 'Quicksand-Regular', sans-serif;
-	font-weight: 400;
+	height: 100%;
+	@include font400;
 	font-size: 16px;
 	background-color: $bg;
 }
@@ -19,8 +20,31 @@ a {
 	text-decoration: none;
 }
 
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+
+
 .container {
 	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 1950px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -29,6 +53,7 @@ a {
 	height: 110px;
 	padding: 30px;
 	background-color: #fff;
+	border-radius: 4px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -39,8 +64,6 @@ a {
 		font-size: 30px;
 		color: #000;
 	}
-
-	&__items {}
 }
 
 .btn {
@@ -48,11 +71,11 @@ a {
 	outline: transparent;
 	border: 1px solid transparent;
 
-	&:focus {
-		border: 1px solid #000;
+	&:active {
+		background-color: darken($sky, 30%);
 	}
 
-	&:active {
-		box-shadow: inset 2px 2px 5px 0 $blue;
+	&:focus {
+		border: 1px solid #000;
 	}
 }

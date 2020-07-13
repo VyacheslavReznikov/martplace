@@ -1,15 +1,19 @@
 $(function() {
 
-	$('.weekly__inner').slick({
-		
+	$('.weekly__inner').slick({		
 		slidesToShow: 1,
 		appendArrows: $('.weekly__arrows'),
 	})
 
+	// $('.followers__inner').slick({		
+	// 	slidesToShow: 3,
+	// 	appendArrows: $('.followers__arrows'),
+	// })
+
 
 	$('.rate-star').rateYo({
 		rating: 4.5,
-		spasing: '5px',
+		spacing: '3px',
 		starWidth: '15px',
 		ratedFill: '#ffc000',
 		readOnly: true,
@@ -17,15 +21,14 @@ $(function() {
 	})
 
 	$('.release__filter-btn').on('click', function() {	
-		$('.release__buttons').slideToggle()
+		$('.release__menu-list').slideToggle()
 	})
 
-	let mixer = mixitup('.release__wrapper');
-	
 
 
 
-
-
+	if ($('.release__wrapper').length) {
+    var mixer = mixitup('.release__wrapper');
+  }
 
 })
