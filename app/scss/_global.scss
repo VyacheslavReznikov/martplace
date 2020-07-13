@@ -35,10 +35,14 @@ a {
 	flex: 0 0 auto;
 }
 
-
-
 .container {
 	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-middle {
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -63,6 +67,27 @@ a {
 	&__title {
 		font-size: 30px;
 		color: #000;
+	}
+}
+
+.label {
+	text-align: center;
+	max-width: 675px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+
+	&__title {
+		font-size: 36px;
+		color: #000;
+		margin-bottom: 20px;
+	}
+
+	&__color {
+		color: $blue;
+	}
+
+	&__subtitle {
+		line-height: 30px;
 	}
 }
 

@@ -1,0 +1,87 @@
+.fun-fact {
+	background-color: #212225;
+	padding: 95px 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-around;
+		min-width: 350px;
+	}
+
+	&__item {
+		text-align: center;
+		line-height: 36px;
+		max-width: 300px;
+		padding: 0 15px;
+	
+		&--yellow .fun-fact__image,
+		&--yellow .fun-fact__number {
+			color: $yellow;
+		}
+
+		&--sky .fun-fact__image,
+		&--sky .fun-fact__number {
+			color: $sky;
+		}
+
+		&--green .fun-fact__image,
+		&--green .fun-fact__number {
+			color: $green;
+		}
+
+		&--red .fun-fact__image,
+		&--red .fun-fact__number {
+			color: $red;
+		}
+	}
+
+	&__image {
+		margin-bottom: 45px;
+		width: 100%;
+		height: 48px;
+		position: relative;
+
+		&::before {			
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 48px;			
+		}
+	}
+
+	&__item--yellow .fun-fact__image {
+		&::before {
+			content: "\e84c";			
+		}
+	}
+
+	&__item--sky .fun-fact__image {
+		&::before {
+			content: "\e80b";		
+		}
+	}
+
+	&__item--green .fun-fact__image {
+		&::before {
+			content: "\e854";	
+		}
+	}
+
+	&__item--red .fun-fact__image {
+		&::before {
+			content: "\e82b";
+		}
+	}
+
+
+	&__number {
+		font-size: 36px;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 18px;
+	}
+}
