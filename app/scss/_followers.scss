@@ -1,0 +1,17 @@
+.followers {
+	padding: 120px 0;
+
+	&__block {
+		margin-bottom: 50px;
+	}
+
+	&__arrows {
+		width: 110px;
+		height: 45px;
+		background-color: $blue;
+		border-radius: 40px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}

@@ -5,10 +5,11 @@ $(function() {
 		appendArrows: $('.weekly__arrows'),
 	})
 
-	// $('.followers__inner').slick({		
-	// 	slidesToShow: 3,
-	// 	appendArrows: $('.followers__arrows'),
-	// })
+	$('.followers__inner').slick({		
+		slideToScroll: 1,
+		slidesToShow: 3,
+		appendArrows: $('.followers__arrows'),
+	})
 
 
 	$('.rate-star').rateYo({
