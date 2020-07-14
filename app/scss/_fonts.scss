@@ -55,8 +55,7 @@
 
 @font-face {
 	font-family: 'Linearicons-Free';
-	src: url('../fonts/Linearicons-Free.eot?w118d');
-	src: url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+	src: 
 		url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
 		url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
 		url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
@@ -118,6 +117,10 @@
 .lnr-smile:before {
 	content: "\e854";
 }
+//user
+.lnr-user:before {
+	content: "\e82a";
+}
 
 //users
 .lnr-users:before {
@@ -163,6 +166,43 @@
 //eye
 .lnr-eye:before {
 	content: "\e81b";
+}
+
+//home
+.lnr-home:before {
+	content: "\e800";
+}
+
+//settings
+.lnr-cog:before {
+	content: "\e810";
+}
+//dice
+.lnr-dice:before {
+	content: "\e812";
+}
+
+//upload
+.lnr-upload:before {
+	content: "\e866";
+}
+//logout
+.lnr-exit:before {
+	content: "\e820";
+}
+
+//book
+.lnr-book:before {
+	content: "\e828";
+}
+//prev
+.lnr-chevron-left:before {
+	content: "\e875";
+}
+
+//next
+.lnr-chevron-right:before {
+	content: "\e876";
 }
 
 @font-face {

@@ -70,6 +70,10 @@ a {
 	}
 }
 
+.block-bg {
+	background: linear-gradient(to left, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+}
+
 .label {
 	text-align: center;
 	max-width: 675px;
@@ -102,5 +106,101 @@ a {
 
 	&:focus {
 		border: 1px solid #000;
+	}
+}
+
+//sliders arrow
+
+.weekly-arrow,
+.followers-arrow,
+.clients-arrow {
+	cursor: pointer;
+	font-size: 0;
+	text-align: center;
+	border: none;
+	background-color: transparent;
+	outline: transparent;
+	width: 50%;
+	height: 100%;
+	border: 1px solid transparent;
+
+	&::before {
+		color: #fff;
+		font-size: 15px;
+	}
+}
+
+.weekly-arrow {
+	&:hover {
+		transition: all 0.3s;
+		background-color: lighten($violet, 10%);
+	}
+
+	&:focus {
+		border: 1px solid $blue;
+	}
+
+	&:active {
+		background-color: darken($violet, 10%);
+	}
+}
+
+.weekly-arrow.slick-prev,
+.followers-arrow.slick-prev {
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+}
+
+.weekly-arrow.slick-next,
+.followers-arrow.slick-next {
+	border-bottom-right-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+.followers-arrow {
+	&:hover {
+		transition: all 0.3s;
+		background-color: lighten($blue, 10%);
+	}
+
+	&:focus {
+		border: 1px solid $violet;
+	}
+
+	&:active {
+		background-color: darken($blue, 10%);
+	}
+}
+
+.clients-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
+	border-radius: 50%;
+	z-index: 3;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $sky;
+	}
+}
+
+.clients-arrow.slick-prev {
+	left: -25px;
+
+	&::before {
+		color: $violet;
+	}
+}
+
+.clients-arrow.slick-next {
+	right: -25px;
+
+	&::before {
+		color: $blue;
 	}
 }

@@ -1,4 +1,4 @@
-.header {	
+.header {
 
 	&__top-inner {
 		height: 100px;
@@ -52,6 +52,7 @@
 		&--alarm .header__number {
 			background-color: $red;
 		}
+
 		&--email .header__number {
 			background-color: $green;
 		}
@@ -115,19 +116,15 @@
 	&__form-btn {
 		cursor: pointer;
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 		right: 0;
 		padding: 22px 34px;
-		border: none;
 		border-radius: 40px;
 		background-color: $blue;
-		color: #fff;
 		font-size: 0;
 		text-align: center;
-		transition: all 0.5s;
 		outline: transparent;
 		border: 1px solid transparent;
+		transition: all 0.5s;
 
 		&::before {
 			content: "\e86f";
@@ -136,8 +133,8 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			font-size: 15px;
-			font-family: 'Linearicons-Free';
 			color: #fff;
+			font-family: 'Linearicons-Free';
 		}
 
 		&:hover {
@@ -146,10 +143,6 @@
 
 		&:focus {
 			border-color: darken($blue, 50%);
-		}
-
-		.lnr-magnifier {
-			font-size: 16px;
 		}
 	}
 }
@@ -250,5 +243,82 @@
 	&__money {
 		color: $blue;
 		font-size: 15px;
+	}
+
+	&__menu {
+		position: absolute;
+		top: 75px;
+		right: 0;
+		min-width: 270px;
+		padding: 20px;
+		z-index: 2;
+		box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+		background-color: #fff;
+		visibility: hidden;
+		transition: all 0.3s;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $blue;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: -10px;
+			right: 30px;
+			width: 18px;
+			height: 10px;
+			border-style: solid;
+			border-width: 0 8px 10px 8px;
+			border-color: transparent transparent $blue transparent;
+		}
+	}
+
+	&__menu-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__menu-item {}
+
+	&__menu-link {
+		display: block;
+		font-size: 15px;
+		padding: 15px 20px;
+		padding-left: 40px;
+		position: relative;
+		color: #54667a;
+		@include font400;
+
+		&::before {
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 15px;
+			font-family: 'Linearicons-Free';
+		}
+
+		&:hover {
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+}
+
+.user-box {
+	position: relative;
+
+	&:hover {
+		.user__menu {
+			visibility: visible;			
+		}
 	}
 }
