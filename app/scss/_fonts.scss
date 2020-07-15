@@ -223,6 +223,15 @@
 	content: "\e833";
 }
 
+//trash
+.lnr-trash:before {
+	content: "\e811";
+}
+
+.lnr-arrow-left:before {
+	content: "\e879";
+}
+
 @font-face {
 	font-family: 'icomoon';
 	src:
