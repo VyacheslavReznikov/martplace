@@ -55,7 +55,7 @@
 
 @font-face {
 	font-family: 'Linearicons-Free';
-	src: 
+	src:
 		url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
 		url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
 		url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
@@ -117,6 +117,7 @@
 .lnr-smile:before {
 	content: "\e854";
 }
+
 //user
 .lnr-user:before {
 	content: "\e82a";
@@ -146,14 +147,22 @@
 .lnr-chart-bars:before {
 	content: "\e843";
 }
+
 //leaf
 .lnr-leaf:before {
 	content: "\e849";
 }
+
 //phone
 .lnr-phone:before {
 	content: "\e831";
 }
+
+//phone-handset
+.lnr-phone-handset:before {
+	content: "\e830";
+}
+
 //bubble
 .lnr-bubble:before {
 	content: "\e83f";
@@ -163,6 +172,7 @@
 .lnr-clock:before {
 	content: "\e864";
 }
+
 //eye
 .lnr-eye:before {
 	content: "\e81b";
@@ -177,6 +187,7 @@
 .lnr-cog:before {
 	content: "\e810";
 }
+
 //dice
 .lnr-dice:before {
 	content: "\e812";
@@ -186,6 +197,7 @@
 .lnr-upload:before {
 	content: "\e866";
 }
+
 //logout
 .lnr-exit:before {
 	content: "\e820";
@@ -195,6 +207,7 @@
 .lnr-book:before {
 	content: "\e828";
 }
+
 //prev
 .lnr-chevron-left:before {
 	content: "\e875";
@@ -205,11 +218,16 @@
 	content: "\e876";
 }
 
+//map
+.lnr-map-marker:before {
+	content: "\e833";
+}
+
 @font-face {
 	font-family: 'icomoon';
 	src:
-		url('../fonts/icomoon.ttf?x00xko') format('truetype'),
 		url('../fonts/icomoon.woff?x00xko') format('woff'),
+		url('../fonts/icomoon.ttf?x00xko') format('truetype'),
 		url('../fonts/icomoon.svg?x00xko#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;

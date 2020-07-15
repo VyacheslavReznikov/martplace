@@ -39,18 +39,14 @@ a {
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
-}
 
-.container-middle {
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
+	&--middle {
+		max-width: 1400px;
+	}
 
-.container-fluid {
-	max-width: 1950px;
-	margin: 0 auto;
-	padding: 0 15px;
+	&--fluid {
+		max-width: unset;
+	}
 }
 
 .block {
@@ -95,22 +91,99 @@ a {
 	}
 }
 
+// общие стили для кнопок и ссылок
 .btn {
 	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 40px;
+	padding: 20px 10px;
+	min-width: 190px;
+	background-color: transparent;
+	color: #fff;
+	@include font400;
+	font-size: 16px;
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 	outline: transparent;
-	border: 1px solid transparent;
+	transition: all 0.3s;
 
-	&:active {
-		background-color: darken($sky, 30%);
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		color: $blue;
 	}
 
 	&:focus {
-		border: 1px solid #000;
+		border-color: $sky;
+	}
+
+	&:active {	
+		background-color: lighten($blue, 20%);
+		color: #fff;
+	}
+
+	&--small {
+		min-width: 130px;
+		padding: 14px 10px;
+	}
+
+	&--blue {
+		border-color: $blue;
+		color: #fff;
+		background-color: $blue;
+
+		&:hover {
+			background-color: lighten($blue, 20%);
+			color: #fff;
+		}	
+
+		&:active {	
+			background-color: lighten($blue, 10%);
+		}
+	}
+
+	&--white {
+		border-color: #fff;
+		background-color: #fff;
+		color: $blue;
+
+		&:hover {
+			background-color: lighten($blue, 20%);
+			color: #fff;
+		}
 	}
 }
 
-//sliders arrow
+// общие стили для ссылок категорий и кнопок фильтра
+.button {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 40px;
+	background-color: #f1f3f6;
+	color: $grey;
+	font-size: 15px;
+	@include font400;
+	border: 1px solid #f1f3f6;
+	outline: transparent;
+	transition: all 0.3s;
 
+	&:hover {
+		background-color: lighten($blue, 20%);
+		color: #fff;
+	}
+
+	&:active {	
+		background-color: lighten($blue, 10%);
+	}
+
+	&:focus {
+		border-color: $sky;
+	}
+}
+
+//sliders arrows
 .weekly-arrow,
 .followers-arrow,
 .clients-arrow {
@@ -183,9 +256,18 @@ a {
 	border-radius: 50%;
 	z-index: 3;
 	transition: all 0.3s;
+	border: 1px solid transparent;
 
 	&:hover {
 		background-color: $sky;
+	}
+
+	&:focus {
+		border: 1px solid $blue;
+	}
+
+	&:active {
+		background-color: lighten($sky, 20%);
 	}
 }
 
@@ -202,5 +284,14 @@ a {
 
 	&::before {
 		color: $blue;
+	}
+}
+
+.clients-arrow.slick-prev,
+.clients-arrow.slick-next {
+	&:hover {
+		&::before {
+			color: #fff;
+		}
 	}
 }

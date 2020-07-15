@@ -2,8 +2,6 @@
 	padding: 110px 0 120px;
 	background-color: #fff;
 
-	&__label {}
-
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -49,16 +47,18 @@
 		border-radius: 50%;
 		object-fit: cover;
 		margin-right: 20px;
-	}
-
-	&__info {}
+	}	
 
 	&__name {
 		font-size: 20px;
 		@include font500;
 		color: #000;
 		margin-bottom: 12.5px;
-	}	
+	}
+
+	&__job {
+		color: #555;
+	}
 
 	&__bubble {
 		&::before {
@@ -78,11 +78,6 @@
 	}
 
 	&__link {
-		display: inline-block;
-		color: #fff;
-		background-color: $blue;
-		border-radius: 40px;
-		padding: 18px 30px;
+		display: inline-block;	
 	}
 }
-

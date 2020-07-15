@@ -15,17 +15,4 @@
 		font-size: 18px;
 		margin-bottom: 65px;
 	}
-
-	&__link {
-		width: 190px;
-		padding: 18px 30px;
-		color: $blue;
-		border-radius: 40px;
-		background-color: #fff;
-		transition: all 0.3s;
-
-		&:hover {
-			background-color: $sky;
-		}
-	}
 }

@@ -12,7 +12,10 @@ $(function() {
 		nextArrow: '<button type="button" class="followers-arrow slick-arrow slick-next lnr lnr-chevron-right">Next</button>',
 		slideToScroll: 1,
 		slidesToShow: 3,
-		appendArrows: $('.followers__arrows'),
+		variableWidth: true,
+
+		appendArrows: $('.followers__arrows')
+
 	})
 
 	$('.clients__inner').slick({
@@ -20,8 +23,8 @@ $(function() {
 		nextArrow: '<button type="button" class="clients-arrow slick-arrow slick-next lnr lnr-chevron-right">Next</button>',
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		arrows: true,
-		// centerMode: true,
+		variableWidth: true
+
 	})
 
 
@@ -33,12 +36,6 @@ $(function() {
 		readOnly: true,
 
 	})
-
-	$('.release__filter-btn').on('click', function() {	
-		$('.release__menu-list').slideToggle()
-	})
-
-
 
 
 	if ($('.release__wrapper').length) {

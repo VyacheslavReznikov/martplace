@@ -13,7 +13,7 @@
 	}
 
 	&__column {
-		max-width: 300px;
+		max-width: 270px;
 
 		&--short {
 			max-width: 210px;
@@ -40,57 +40,8 @@
 		margin-bottom: 15px;
 	}
 
-	&-link {
-		display: block;
-		transition: all 0.3s;
-
-		&:hover {
-			color: $sky;
-		}
-	}
-
 	&__addres {
 		font-style: normal;
-	}
-
-	&__phone,
-	&__email,
-	&__map {
-		line-height: 26px;
-		color: #ababab;
-		display: block;
-		margin-bottom: 10px;
-		padding-left: 30px;
-		position: relative;
-
-		&::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			color: #fff;
-			font-family: 'Linearicons-Free';
-			font-size: 16px;
-		}
-	}
-
-	&__phone {
-		&::before {
-			content: "\e830";
-		}
-	}
-
-	&__email {
-		&::before {
-			content: "\e818";
-		}
-	}
-
-	&__map {
-		&::before {
-			content: "\e833";
-		}
 	}
 
 	&__title {
@@ -116,6 +67,31 @@
 
 	&__link {
 		color: #ababab;
+		display: block;
+		margin-bottom: 15px;
+		@include font400;		
+		transition: all 0.3s;
+
+		&--phone,
+		&--email,
+		&--map {
+			padding-left: 25px;
+			position: relative;
+			line-height: 20px;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #fff;
+				font-family: 'Linearicons-Free';
+			}
+		}
+
+		&:hover {
+			color: $sky;
+		}
 	}
 
 	&__form {
@@ -124,95 +100,17 @@
 
 	&__form-email {
 		max-width: 100%;
+		padding-right: 120px;
 	}
 
 	&__form-btn {
 		font-size: 15px;
 		color: #fff;
 		padding: 15px 28px;
+		top: -1px;
 
 		&::before {
 			content: "";
-		}
-	}
-
-	&__sosial {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	&__sosial-item {
-		display: inline-block;
-		margin-right: 10px;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
-	&__sosial-link {
-		position: relative;
-		font-size: 0;
-		text-align: center;
-		width: 42px;
-		height: 42px;
-		border-radius: 50%;
-		background-color: #395799;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: all 0.5s;
-
-		&::before {
-			content: "\f09a";
-			font-size: 16px;
-			font-family: 'icomoon';
-			color: #fff;
-		}
-
-		&:hover {
-			transform: translateY(2px);
-		}
-	}
-
-	&__sosial-twitter {
-		background-color: #19b2f5;
-
-		&::before {
-			content: "\f099";
-		}
-	}
-
-	&__sosial-google {
-		background-color: #f05b44;
-
-		&::before {
-			content: "\f1a0";
-		}
-	}
-
-	&__sosial-pinterest {
-		background-color: #9c0c1c;
-
-		&::before {
-			content: "\f0d2";
-		}
-	}
-
-	&__sosial-linkedin {
-		background-color: #0da6be;
-
-		&::before {
-			content: "\eaca";
-		}
-	}
-
-	&__sosial-dribbble {
-		background-color: #ea4c89;
-
-		&::before {
-			content: "\f17d";
 		}
 	}
 
