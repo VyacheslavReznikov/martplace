@@ -15,3 +15,31 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 1200px) {
+	.weekly {
+		padding: 50px 0;
+
+		&__block {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.weekly {
+		padding: 30px 0;
+
+		&__block {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.weekly {
+		&__arrows {
+			width: 200px;
+		}
+	}
+}

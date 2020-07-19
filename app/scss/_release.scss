@@ -103,8 +103,8 @@
 
 	&__buttons {
 		position: relative;
-		height: 92px;
-		padding: 30px;
+		min-height: 92px;
+		padding: 30px 30px 10px;
 		box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
 		border-radius: 4px;
 		overflow: hidden;
@@ -113,7 +113,8 @@
 	}
 
 	&__btn {
-		margin-right: 2px;
+		margin-right: 5px;
+		margin-bottom: 20px;
 
 		&:last-child {
 			margin-right: 0;
@@ -141,4 +142,25 @@
 .release__menu-btn.mixitup-control-active {
 	background-color: transparent;
 	color: $blue;
+}
+
+@media (max-width: 1200px) {
+	.release {
+		padding: 50px 0;
+		&__wrapper {
+			justify-content: space-around;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.release {
+		padding: 30px 0;
+		&__buttons {
+			margin-bottom: 30px;
+		}
+		&__btn-new {
+			margin-top: 10px;
+		}
+	}
 }

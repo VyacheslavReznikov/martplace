@@ -16,6 +16,28 @@
 		align-items: center;
 	}
 
+	&__btn-menu {
+		background-color: $blue;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		z-index: 5;
+		border-radius: 6px;
+		display: none;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&:active {
+			background-color: lighten($blue, 20%);
+		}
+	}
+
 	&__seller {
 		font-size: 14px;
 		padding: 10px 20px;
@@ -24,7 +46,7 @@
 
 	&__links {
 		margin-right: 30px;
-		display: inline-flex;
+		display: flex;
 		align-items: center;
 	}
 
@@ -139,7 +161,6 @@
 }
 
 .menu {
-
 	&__list {
 		margin: 0;
 		padding: 0;
@@ -147,11 +168,31 @@
 	}
 
 	&__item {
-		display: inline-block;
-		margin-right: 30px;
+		position: relative;
+		padding-right: 33px;
+		height: 80px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.5s;
+		&--dropdown {
+			position: relative;
+			&::before {
+				content: "\e874";
+				position: absolute;
+				font-family: 'Linearicons-Free';
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: none;
+			}
+		}
+	}
 
-		&:last-child {
-			margin-right: 0;
+	&__item:hover {
+		.dropdown__menu {
+			overflow: visible;
+			height: auto;
 		}
 	}
 
@@ -161,6 +202,10 @@
 		transition: all 0.3s;
 		font-size: 15px;
 		@include font600;
+
+		&--active {
+			color: $blue;
+		}
 
 		&:hover {
 			color: $blue;
@@ -204,6 +249,7 @@
 	}
 }
 
+
 //общий класс для выпадающих меню
 .dropdown {
 	&__box {
@@ -212,75 +258,107 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 0.5s;
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+			display: none;
+		}
 	}
 
 	&__menu {
 		position: absolute;
-		top: 100px;
 		right: 0;
-		z-index: 2;
+		top: 100px;
 		background-color: #fff;
 		box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+		z-index: 2;
+		min-width: 270px;
 		height: 0;
 		overflow: hidden;
-	}
 
-	&__box:hover {
-		.dropdown__menu {
-			height: auto;
-			overflow: visible;
+		&--left {
+			left: 0;
+			top: 80px;
+			border-top-width: 5px;	
+		}
+
+		&--long {
+			top: 80px;
+			left: -470px;
+			width: 1140px;
 		}
 	}
-}
 
-
-.basket,
-.email,
-.alarm {
-	&__box {
-		width: 52.5px;
+	&__menu-list {
+		background-color: #fff;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		transition: all 0.5s;
 	}
-}
 
-.alarm__menu,
-.email__menu {
-	width: 370px;
-}
-
-.basket__menu {
-	width: 400px;
-}
-
-.user__menu {
-	width: 270px;
-	padding: 0 20px;
-}
-
-
-.alarm__box {
-	.decor:after {
-		left: 15px;
+	&__menu-item {
+		padding: 0 20px;
 	}
-	.alarm__menu {
-		left: 0;
+
+	&__menu-link {
+		display: block;
+		@include font400;
+		font-size: 15px;
+		color: #54667a;
+		padding: 12.5px 10px;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $blue;
+			color: #fff;
+		}
 	}
-}
 
-
-.email {
 	&__label {
-		padding: 0 25px;
-		border-bottom: 1px solid #ececec;
+		padding: 20px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		transition: all 0.5s;
 	}
 
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 30px;
+			height: 1px;
+			width: 90%;
+			background-color: #cacaca;
+		}
+	}
+
+	&__column {
+		max-width: 240px;
+		padding-right: 5px;
+	}
+
 	&__title {
 		font-size: 18px;
 		@include font500;
+
+		&--shift {
+			margin-left: 30px;
+		}
 	}
 
 	&__btn {
@@ -306,26 +384,13 @@
 		padding: 0 25px;
 		display: flex;
 		align-items: center;
-		border-bottom: 1px solid #ececec;
+		border-top: 1px solid #ececec;
 		transition: all 0.5s;
-
-		&:last-child {
-			border: none;
-		}
-	}
-
-	&__box:hover {
-		.email__label {
-			padding: 5px 25px;
-		}
-
-		.email__item {
-			padding: 20px 25px;
-		}
 	}
 
 	&__user {
-		display: inline-block;
+		flex: 0 0 40px;
+		display: block;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
@@ -339,11 +404,60 @@
 		object-fit: cover;
 	}
 
-	&__info {}
+	&__info {
+		width: 100%;
+	}
 
+	&__box:hover {
+		.dropdown {
+			&__menu-list {
+				padding: 20px 0;
+			}
+
+			&__label {
+				padding: 15px 20px;
+			}
+
+			&__item {
+				padding: 20px 25px;
+			}
+
+			&__menu {
+				height: auto;
+				overflow: visible;
+			}
+		}
+	}
+}
+
+.menu__item:hover {
+	.dropdown {
+		&__menu-list {
+			padding: 20px 0;
+		}
+
+		&__title--shift {
+			padding: 33px 0 17px;
+			font-size: 16px;
+		}
+
+		&__item {
+			padding: 20px 25px;
+		}
+
+		&__menu {
+			height: auto;
+			overflow: visible;
+		}
+	}
+}
+
+.email {
 	&__info-row {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-bottom: 10px;
 	}
 
 	&__name {
@@ -351,7 +465,7 @@
 		position: relative;
 		@include font500;
 		color: #333;
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 		transition: all 0.3s;
 
 		&::before {
@@ -389,29 +503,15 @@
 
 
 .basket {
-	&__menu {
-		width: 400px;
-	}
-
 	&__item {
-		padding: 0 24px;
-		border-bottom: 1px solid #ececec;
+		padding: 0 25px;
 		display: flex;
+		border-bottom: 1px solid #cacaca;
 		transition: all 0.5s;
 	}
 
-	&__box:hover {
-		.basket__menu {
-			height: auto;
-			overflow: visible;
-		}
-
-		.basket__item {
-			padding: 28px 24px;
-		}
-	}
-
 	&__image {
+		display: inline-block;
 		width: 80px;
 		height: 70px;
 		object-fit: cover;
@@ -422,22 +522,22 @@
 		width: 100%;
 	}
 
-	&__title {
+	&__title,
+	&__subtitle {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	&__name {
-		display: block;
-		max-width: 180px;
+		@include font500;
+		font-size: 16px;
 		line-height: 22px;
-		@include font600;
-		color: #000;
+		max-width: 180px;
 		transition: all 0.3s;
 
 		&:hover {
-			color: lighten($blue, 20%);
+			color: $blue;
 		}
 	}
 
@@ -477,16 +577,11 @@
 		}
 	}
 
-	&__subtitle {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
 	&__category {
-		display: block;
-		color: $violet;
+		@include font400;
 		font-size: 15px;
+		color: $violet;
+		display: block;
 		padding-left: 20px;
 		position: relative;
 
@@ -506,7 +601,7 @@
 	}
 
 	&__sum {
-		padding: 25px;
+		padding: 0 25px;
 		@include font600;
 		font-size: 18px;
 		color: #000;
@@ -568,7 +663,20 @@
 			}
 		}
 	}
+
+	&__box:hover {
+		.basket {
+			&__item {
+				padding: 25px;
+			}
+
+			&__sum {
+				padding: 25px;
+			}
+		}
+	}
 }
+
 
 .user {
 	cursor: pointer;
@@ -602,40 +710,349 @@
 		font-size: 15px;
 	}
 
-	&__menu-list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
 	&__menu-link {
-		display: block;
-		font-size: 15px;
-		padding: 15px 20px;
 		padding-left: 40px;
 		position: relative;
-		color: #54667a;
-		@include font400;
 
 		&::before {
 			position: absolute;
 			left: 10px;
-			top: 50%;
-			transform: translateY(-50%);
-			font-size: 15px;
 			font-family: 'Linearicons-Free';
 		}
+	}
+}
 
-		&:hover {
-			background-color: $blue;
-			color: #fff;
+
+.basket,
+.email,
+.alarm {
+	&__box {
+		width: 52.5px;
+	}
+}
+
+
+.alarm__menu,
+.email__menu {
+	width: 370px;
+}
+
+.basket__menu {
+	width: 400px;
+}
+
+.alarm__box {
+	.decor:after {
+		left: 15px;
+	}
+
+	.alarm__menu {
+		left: 0;
+	}
+}
+
+.alarm {
+	&__item {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 25px;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background-color: #e6f1fd;
+			color: $blue;
+			font-size: 14px;
+			font-weight: 600;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&--violet::before {
+			color: $violet;
+			background-color: #f1ecf9;
+		}
+
+		&--red::before {
+			color: $red;
+			background-color: #fff0f0;
+		}
+
+		&--green::before {
+			color: $green;
+			background-color: #effaeb;
 		}
 	}
 
-	&__box:hover {
-		.user__menu {
-			transition: all 0.5s;
-			padding: 20px;
+	&__text {
+		@include font400;
+		color: #747a86;
+		font-size: 15px;
+		line-height: 20px;
+		max-width: 220px;
+	}
+
+	&__name {
+		@include font600;
+		color: #333;
+		font-size: 16px;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $blue;
 		}
+	}
+
+	&__link {
+		color: $blue;
+		font-size: 16px;
+	}
+
+	&__date {
+		font-size: 14px;
+		@include font400;
+		color: #747a86;
+		line-height: 28px;
+	}
+}
+
+@media (max-width:1430px) {
+	.dropdown {
+		&__menu--long {
+			width: 980px;
+		}
+
+		&__inner {
+			flex-wrap: wrap;
+		}
+	}
+
+}
+
+@media (max-width:992px) {
+	.header {
+		&__logo-link {
+			margin-left: 50px;
+		}
+
+		&__seller {
+			display: none;
+		}
+
+		&__form {
+			margin: 0 auto;
+		}
+
+		&__form-search {
+			width: 700px;
+		}
+	}
+
+	.menu {
+		&__list {
+			position: absolute;
+			top: 100px;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			background-color: $bg;
+			text-align: center;
+			display: none;
+		}
+
+		&__item {
+			display: block;
+			padding-right: 0;
+			margin-bottom: 10px;
+			height: auto;
+			&--dropdown::before {
+				display: block;
+			}
+		}
+
+		&__link {
+			display: block;
+			padding: 10px;
+			background-color: lighten($blue, 40%);
+		}
+
+		&__burger {
+			display: block;
+			position: absolute;
+			top: 35px;
+		}
+	}
+
+	.dropdown {
+		&__menu--left,
+		&__menu--long  {
+			top: 39px !important;
+			max-width: 100%;
+			display: none;
+		}
+
+		&__menu--long {
+			left: 0;
+		}
+
+	
+
+		&__row {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+	}
+}
+
+
+@media (max-width:768px) {
+	.header {
+		&__items {
+			transition: all 0.5s;
+			position: absolute;
+			top: -100%;
+			right: 5px;
+
+			z-index: 3;
+			background-color: $bg;
+			border: 1px solid $blue;
+			padding-right: 60px;
+
+			&.active {
+				top: 0;
+			}
+		}
+
+		&__btn-menu {
+			display: block;
+		}
+
+		&__form-search {
+			width: 520px;
+		}
+	}
+
+	.dropdown {
+		&__menu {
+			left: 0;
+			top: 115px;
+			width: 295px;
+		}
+
+		&__box {
+			width: 55px;
+			top: -15px;
+
+			&::before {
+				display: block;
+			}
+		}
+
+		&__item {
+			padding: 20px 10px !important;
+		}
+	}
+
+	.alarm {
+		&__item::before {
+			right: 10px;
+			top: 75%;
+		}
+	}
+
+	.email {
+		&__box {
+			.decor::after {
+				left: 75px;
+			}
+		}
+
+		&__menu {
+			left: -55px;
+
+		}
+	}
+
+	.basket {
+		&__box {
+			.decor::after {
+				left: 130px;
+			}
+		}
+
+		&__menu {
+			left: -110px;
+			width: 295px;
+		}
+
+		&__item {
+			padding: 20px 10px !important;
+		}
+
+		&__title {
+			flex-wrap: wrap;
+			margin-bottom: 10px;
+		}
+
+		&__name {
+			margin-bottom: 5px;
+		}
+
+		&__delete {
+			margin-left: auto;
+		}
+	}
+
+	.user {
+		&__box {
+			margin-left: 15px;
+
+			.decor:after {
+				right: 77px;
+			}
+		}
+
+		&__menu {
+			left: -180px;
+		}
+
+		&__info {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.header {
+		&__form-search {
+			width: 265px;
+		}
+
+		&__items {
+			width: 300px;
+		}
+
+		&__links {
+			margin: 0;
+		}
+
+		&__user {
+			margin-left: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+@media (min-width:993px) {
+	.menu__list {
+		display: block !important;
 	}
 }

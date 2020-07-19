@@ -10,7 +10,7 @@
 	&__item {
 		box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
 		border-radius: 4px;
-		width: 555px;
+		max-width: 555px;
 		min-height: 320px;
 		padding: 50px 40px;
 		position: relative;
@@ -27,10 +27,18 @@
 	}
 
 	&__box {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		margin-bottom: 27px;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			font-family: 'Linearicons-Free';
+			font-size: 60px;
+			color: #e8e8e8;
+		}
 	}
 
 	&__user {
@@ -47,7 +55,7 @@
 		border-radius: 50%;
 		object-fit: cover;
 		margin-right: 20px;
-	}	
+	}
 
 	&__name {
 		font-size: 20px;
@@ -60,16 +68,17 @@
 		color: #555;
 	}
 
-	&__bubble {
-		&::before {
-			font-size: 60px;
-			color: #e8e8e8;
-		}
-	}
-
 	&__text {
 		line-height: 30px;
 		color: #555;
+	}
+
+	&__arrows {
+		position: relative;
+		height: 50px;
+		width: 130px;
+		margin: 0 auto;
+		margin-top: 10px;
 	}
 
 	&__btn {
@@ -78,6 +87,45 @@
 	}
 
 	&__link {
-		display: inline-block;	
+		display: inline-block;
+	}
+}
+
+@media (max-width: 992px) {
+	.clients__box::before {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.clients {
+		padding: 50px 0;
+
+		&__item {
+			max-width: 100%;
+		}
+
+		&__btn {
+			margin-top: 35px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.clients {
+		padding: 30px 0;
+
+		&__label {
+			margin-bottom: 30px;
+		}
+
+		&__item {
+			padding: 15px;
+		}
+
+		&__box::before {
+			display: none;
+		}
+	
 	}
 }

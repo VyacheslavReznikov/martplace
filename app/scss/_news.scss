@@ -19,7 +19,6 @@
 
 	&__items-box {
 		width: 50%;
-		padding: 0 30px;
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -45,7 +44,6 @@
 	&__date,
 	&__commit,
 	&__view {
-		margin-left: auto;
 		padding-left: 25px;
 		position: relative;
 
@@ -65,6 +63,11 @@
 		}
 	}
 
+	&__commit,
+	&__view {
+		margin-left: auto;
+	}
+
 	.product__title {
 		font-size: 22px;
 		margin-bottom: 20px;
@@ -75,5 +78,22 @@
 	.product__text {
 		padding-bottom: 25px;
 		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.news {
+		padding: 50px 0;		
+
+		&__inner {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}	
+	}
+}
+
+@media (max-width: 768px) {
+	.news {
+		padding: 30px 0;
 	}
 }

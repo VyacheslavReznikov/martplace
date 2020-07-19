@@ -3,6 +3,7 @@
 
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&__item {
@@ -59,6 +60,21 @@
 
 		.support__color {
 			color: $violet;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.support {
+		&__item {
+		padding: 30px 0;
+
+			width: 100%;
+			border-bottom: 1px solid #cacaca;
+
+			&:last-child {
+				border: none;
+			}
 		}
 	}
 }

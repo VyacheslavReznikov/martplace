@@ -228,8 +228,19 @@
 	content: "\e811";
 }
 
+//arrow left
 .lnr-arrow-left:before {
 	content: "\e879";
+}
+
+//arrow down
+.lnr-chevron-down:before {
+	content: "\e874";
+}
+
+//star
+.lnr-star:before {
+	content: "\e814";
 }
 
 @font-face {

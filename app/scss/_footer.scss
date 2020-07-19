@@ -69,7 +69,7 @@
 		color: #ababab;
 		display: block;
 		margin-bottom: 15px;
-		@include font400;		
+		@include font400;
 		transition: all 0.3s;
 
 		&--phone,
@@ -128,5 +128,77 @@
 	&__copy-link {
 		color: #fff;
 		display: inline-block;
+		@include font400;
+	}
+}
+
+@media (max-width:992px) {
+	.footer {
+		&__top {
+			padding: 50px 0;
+		}
+
+		&__row {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		&__column--address,
+		&__column--long {
+			min-width: 100%;
+		}		
+
+		&__form-email {
+			width: 100%;
+		}
+
+		&__sosial {
+			text-align: center;
+		}
+	}
+}
+
+
+@media (max-width:576px) {
+	.footer {
+		&__top {
+			padding: 30px 0 0;
+		}
+
+		&__column {
+			min-width: 100%;		
+		}
+
+		&__column--short {
+			padding-left: 0;		
+		}	
+
+		&__form-email {
+			padding: 0 25px;
+		}
+
+		&__form-btn {
+			position: relative;
+			left: 0;
+			top: 15px;
+			width: 100%;
+		}
+
+		&__inner {
+			height: 50px;
+		}
+
+		&__copy {
+			padding-top: 5px;
+			text-align: center;
+		}
+	}
+
+	.sosial {
+		flex-wrap: wrap;
+
+		&__item {
+			margin-bottom: 30px;
+		}
 	}
 }

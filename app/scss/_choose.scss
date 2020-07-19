@@ -97,3 +97,26 @@
 		color: #555;
 	}
 }
+
+@media (max-width: 1200px) {
+	.choose {
+		padding: 50px 0;
+		&__inner {
+			justify-content: space-around;
+		}
+
+		&__item {
+			width: 47%;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.choose {
+		padding: 30px 0 0;
+
+		&__item {
+			width: 100%;
+		}
+	}
+}

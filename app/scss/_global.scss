@@ -46,6 +46,7 @@ a {
 
 	&--fluid {
 		max-width: unset;
+		padding: 0;
 	}
 }
 
@@ -63,8 +64,23 @@ a {
 	&__title {
 		font-size: 30px;
 		color: #000;
+		padding-right: 10px;
 	}
 }
+
+@media (max-width: 576px) {
+	.block {
+		flex-direction: column;
+		padding: 15px;
+		height: auto;
+
+		&__title {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
 
 .block-bg {
 	background: linear-gradient(to left, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
@@ -88,6 +104,14 @@ a {
 
 	&__subtitle {
 		line-height: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	.label {
+		&__title {
+			font-size: 22px;
+		}
 	}
 }
 
@@ -118,7 +142,7 @@ a {
 		border-color: $sky;
 	}
 
-	&:active {	
+	&:active {
 		background-color: lighten($blue, 20%);
 		color: #fff;
 	}
@@ -136,9 +160,9 @@ a {
 		&:hover {
 			background-color: lighten($blue, 20%);
 			color: #fff;
-		}	
+		}
 
-		&:active {	
+		&:active {
 			background-color: lighten($blue, 10%);
 		}
 	}
@@ -174,7 +198,7 @@ a {
 		color: #fff;
 	}
 
-	&:active {	
+	&:active {
 		background-color: lighten($blue, 10%);
 	}
 
@@ -296,9 +320,25 @@ a {
 	}
 }
 
+@media (max-width: 1200px) {
+	.clients__arrow {
+		text-align: center;
+		top: 0;
+	}
+
+	.clients-arrow.slick-prev {
+		left: 0;
+	}
+
+	.clients-arrow.slick-next {
+		right: 0;
+	}
+}
+
 //decor
 .decor {
 	position: relative;
+
 	&::before {
 		content: "";
 		position: absolute;

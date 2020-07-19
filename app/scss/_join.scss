@@ -16,3 +16,32 @@
 		margin-bottom: 65px;
 	}
 }
+
+@media (max-width: 768px) {
+	.join {
+		&__inner {
+			padding: 50px 15px;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.join {
+		&__inner {
+			padding: 30px 15px;
+		}
+
+		&__title {
+			font-size: 28px;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+			line-height: 25px;
+		}
+	}
+}
