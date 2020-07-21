@@ -39,7 +39,7 @@
 @media (max-width: 576px) {
 	.followers {
 		&__arrows {
-			width: 200px;
+			display: none;
 		}
 	}
 }

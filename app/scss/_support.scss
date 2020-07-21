@@ -49,9 +49,13 @@
 
 		.support__color {
 			color: $blue;
+			transition: all 0.3s;
+
+			&:hover {
+				text-shadow: 1px 1px 1px $blue;
+			}
 		}
 	}
-
 
 	&__item--violet {
 		.support__image {
@@ -60,6 +64,11 @@
 
 		.support__color {
 			color: $violet;
+			transition: all 0.3s;
+
+			&:hover {
+				text-shadow: 1px 1px 1px $violet;
+			}
 		}
 	}
 }
@@ -67,7 +76,7 @@
 @media (max-width: 576px) {
 	.support {
 		&__item {
-		padding: 30px 0;
+			padding: 30px 0;
 
 			width: 100%;
 			border-bottom: 1px solid #cacaca;

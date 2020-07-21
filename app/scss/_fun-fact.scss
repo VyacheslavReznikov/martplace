@@ -28,48 +28,56 @@
 		max-width: 300px;
 		padding: 0 15px;
 
-		&--yellow .fun-fact__image,
-		&--yellow .fun-fact__number {
-			color: $yellow;
+		&--yellow {
+			.fun-fact {
+				&__image,
+				&__number {
+					color: $yellow;
+				}
+
+				&__image::before {
+					content: "\e84c";
+				}
+			}
 		}
 
-		&--sky .fun-fact__image,
-		&--sky .fun-fact__number {
-			color: $sky;
+		&--sky {
+			.fun-fact {
+				&__image,
+				&__number {
+					color: $sky;
+				}
+
+				&__image::before {
+					content: "\e80b";
+				}
+			}
 		}
 
-		&--green .fun-fact__image,
-		&--green .fun-fact__number {
-			color: $green;
+		&--green {
+			.fun-fact {
+				&__image,
+				&__number {
+					color: $green;
+				}
+
+				&__image::before {
+					content: "\e854";
+				}
+			}
 		}
 
-		&--red .fun-fact__image,
-		&--red .fun-fact__number {
-			color: $red;
-		}
-	}
+		&--red {
+			.fun-fact {
+				&__image,
+				&__number {
+					color: $red;
+				}
 
-	&__item--yellow .fun-fact__image {
-		&::before {
-			content: "\e84c";
-		}
-	}
-
-	&__item--sky .fun-fact__image {
-		&::before {
-			content: "\e80b";
-		}
-	}
-
-	&__item--green .fun-fact__image {
-		&::before {
-			content: "\e854";
-		}
-	}
-
-	&__item--red .fun-fact__image {
-		&::before {
-			content: "\e82b";
+				&__image::before {
+					content: "\e82b";
+				}
+			}
 		}
 	}
 
@@ -83,6 +91,7 @@
 		font-size: 18px;
 	}
 }
+
 
 @media (max-width: 768px) {
 	.fun-fact {
@@ -109,13 +118,13 @@
 @media (max-width: 576px) {
 	.fun-fact {
 		&__item {
-			width: 100%;	
+			width: 100%;
 			padding-bottom: 20px;
-			border-bottom: 1px solid #fff;	
-			
+			border-bottom: 1px solid #fff;
+
 			&:last-child {
 				border: none;
 			}
-		}			
+		}
 	}
 }

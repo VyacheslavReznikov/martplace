@@ -35,45 +35,45 @@
 		&:hover {
 			transform: translateY(2px);
 		}
-	}
 
-	&__link--twitter {
-		background-color: #19b2f5;
+		&--twitter {
+			background-color: #19b2f5;
 
-		&::before {
-			content: "\f099";
+			&::before {
+				content: "\f099";
+			}
 		}
-	}
 
-	&__link--google {
-		background-color: #f05b44;
+		&--google {
+			background-color: #f05b44;
 
-		&::before {
-			content: "\f1a0";
+			&::before {
+				content: "\f1a0";
+			}
 		}
-	}
 
-	&__link--pinterest {
-		background-color: #9c0c1c;
+		&--pinterest {
+			background-color: #9c0c1c;
 
-		&::before {
-			content: "\f0d2";
+			&::before {
+				content: "\f0d2";
+			}
 		}
-	}
 
-	&__link--linkedin {
-		background-color: #0da6be;
+		&--linkedin {
+			background-color: #0da6be;
 
-		&::before {
-			content: "\eaca";
+			&::before {
+				content: "\eaca";
+			}
 		}
-	}
 
-	&__link--dribbble {
-		background-color: #ea4c89;
+		&--dribbble {
+			background-color: #ea4c89;
 
-		&::before {
-			content: "\f17d";
+			&::before {
+				content: "\f17d";
+			}
 		}
 	}
 }

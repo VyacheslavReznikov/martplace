@@ -270,8 +270,20 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-list:before {
+	content: "\e9ba";
+}
+
+.icon-circle-o:before {
+  content: "\f10c";
+}
+
 .icon-document-file-psd:before {
 	content: "\e900";
+}
+
+.icon-th-large:before {
+	content: "\f009";
 }
 
 .icon-twitter:before {
@@ -290,6 +302,14 @@
 	content: "\f0d2";
 }
 
+.icon-mail-reply:before {
+	content: "\f112";
+}
+
+.icon-reply:before {
+	content: "\f112";
+}
+
 .icon-html5:before {
 	content: "\f13b";
 }
@@ -305,6 +325,8 @@
 .icon-google:before {
 	content: "\f1a0";
 }
+
+
 
 .icon-linkedin2:before {
 	content: "\eaca";

@@ -1,18 +1,26 @@
 $(function() {
 
 	$('.weekly__inner').slick({		
-		prevArrow: '<button type="button" class="weekly-arrow slick-arrow slick-prev lnr lnr-chevron-left">Previous</button>',
-		nextArrow: '<button type="button" class="weekly-arrow slick-arrow slick-next lnr lnr-chevron-right">Next</button>',
+		prevArrow: '<button type="button" class="weekly-arrow slick-arrow slick-arrow--prev lnr lnr-chevron-left">Previous</button>',
+		nextArrow: '<button type="button" class="weekly-arrow slick-arrow slick-arrow--next lnr lnr-chevron-right">Next</button>',
 		slidesToShow: 1,
 		appendArrows: $('.weekly__arrows'),
+		responsive: [
+			{
+				breakpoint: 577,
+				settings: {
+					autoplay: true
+				}
+			}		
+		]
 	})
 
 	$('.followers__inner').slick({		
-		prevArrow: '<button type="button" class="followers-arrow slick-arrow slick-prev lnr lnr-chevron-left">Previous</button>',
-		nextArrow: '<button type="button" class="followers-arrow slick-arrow slick-next lnr lnr-chevron-right">Next</button>',
+		prevArrow: '<button type="button" class="followers-arrow slick-arrow slick-arrow--prev lnr lnr-chevron-left">Previous</button>',
+		nextArrow: '<button type="button" class="followers-arrow slick-arrow slick-arrow--next lnr lnr-chevron-right">Next</button>',
 		slideToScroll: 1,
 		slidesToShow: 3,
-		// variableWidth: true,
+		appendArrows: $('.followers__arrows'),
 		responsive: [
 			{
 				breakpoint: 1121,
@@ -25,19 +33,22 @@ $(function() {
 				settings: {
 					slidesToShow: 1
 				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					slidesToShow: 1,
+					autoplay: true
+				}
 			}
-		],
-
-		appendArrows: $('.followers__arrows')
-
+		]
 	})
 
 	$('.clients__inner').slick({
-		prevArrow: '<button type="button" class="clients-arrow slick-arrow slick-prev lnr lnr-chevron-left">Previous</button>',
-		nextArrow: '<button type="button" class="clients-arrow slick-arrow slick-next lnr lnr-chevron-right">Next</button>',
+		prevArrow: '<button type="button" class="clients-arrow slick-arrow slick-arrow--prev lnr lnr-chevron-left">Previous</button>',
+		nextArrow: '<button type="button" class="clients-arrow slick-arrow slick-arrow--next lnr lnr-chevron-right">Next</button>',
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		// variableWidth: true.
 		responsive: [
 			{
 				breakpoint: 1200,
@@ -50,10 +61,17 @@ $(function() {
 				settings: {
 					slidesToShow: 1,
 					appendArrows: $('.clients__arrows')
-
+				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					slidesToShow: 1,
+					autoplay: true,
+					appendArrows: $('.clients__arrows')
 				}
 			}
-		],
+		]
 
 	})
 
@@ -76,8 +94,13 @@ $(function() {
 		$('.menu__list').slideToggle()
 	})
 
-	$('.menu__item--dropdown').on('click', function() {
-		$('.dropdown__menu--left').slideToggle()
+
+	$('.menu__link-btn').on('click', function() {
+		$('.dropdown--left').slideToggle()
+	})
+
+	$('.header__button').on('click', function() {
+		$('.dropdown').slideToggle()
 	})
 
 

@@ -1,5 +1,4 @@
 .header {
-
 	&__top-inner {
 		height: 100px;
 		display: flex;
@@ -50,37 +49,86 @@
 		align-items: center;
 	}
 
+	&__box {
+		width: 52.5px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&--user {
+			min-width: 170px;
+		}
+
+		&:hover {
+			.dropdown {
+				visibility: visible;
+				;
+			}
+		}
+	}
+
+	&__button {
+		cursor: pointer;
+		position: absolute;
+		bottom: 0;
+		width: 52.5px;
+		height: 44px;
+		background-color: $blue;
+		border: none;
+		display: none;
+
+		&::before {
+			font-size: 20px;
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+
 	&__link {
 		position: relative;
-		font-size: 0;
-		text-align: center;
+		padding: 15px;
+
 
 		&::before {
 			font-size: 20px;
 			color: #7e8fa1;
 		}
 
-		&--alarm .header__number {
-			background-color: $red;
+		&--alarm {
+			.header {
+				&__number {
+					background-color: $red;
+				}
+			}
 		}
 
-		&--email .header__number {
-			background-color: $green;
+		&--email {
+			.header {
+				&__number {
+					background-color: $green;
+				}
+			}
 		}
 
-		&--basket .header__number {
-			background-color: $blue;
+		&--basket {
+			.header {
+				&__number {
+					background-color: $blue;
+				}
+			}
 		}
 	}
 
 	&__number {
 		position: absolute;
-		top: -15px;
-		right: -15px;
-		min-width: 20px;
-		height: 20px;
-		padding: 0 3px;
-		border-radius: 50%;
+		top: 0;
+		right: -3px;
+		min-width: 22px;
+		height: 22px;
+		padding: 0 5px;
+		border-radius: 40px;
 		font-size: 14px;
 		line-height: 20px;
 		@include font500;
@@ -175,24 +223,11 @@
 		justify-content: center;
 		align-items: center;
 		transition: all 0.5s;
-		&--dropdown {
-			position: relative;
-			&::before {
-				content: "\e874";
-				position: absolute;
-				font-family: 'Linearicons-Free';
-				right: 10px;
-				top: 50%;
-				transform: translateY(-50%);
-				display: none;
-			}
-		}
 	}
 
 	&__item:hover {
-		.dropdown__menu {
-			overflow: visible;
-			height: auto;
+		.dropdown {
+			visibility: visible;
 		}
 	}
 
@@ -214,6 +249,17 @@
 		&:active {
 			text-shadow: 1px 1px 1px $blue;
 		}
+	}
+
+	&__link-btn {
+		width: 60px;
+		height: 45px;
+		border: none;
+		background-color: $blue;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		display: none;
 	}
 
 	&__burger {
@@ -252,52 +298,298 @@
 
 //общий класс для выпадающих меню
 .dropdown {
-	&__box {
-		position: relative;
-		height: 100px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	position: absolute;
+	top: 100px;
+	right: 0;
+	width: 370px;
+	z-index: 3;
+	background-color: #fff;
+	box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+	visibility: hidden;
 
-		&::before {
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-			bottom: 0;
-			display: none;
+	&__label {
+		padding: 20px 0;
+		@include font400;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 18px;
+		@include font500;
+
+		&--basket {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+
+		&--shift {
+			margin-left: 30px;
 		}
 	}
 
-	&__menu {
-		position: absolute;
-		right: 0;
-		top: 100px;
-		background-color: #fff;
-		box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-		z-index: 2;
-		min-width: 270px;
-		height: 0;
-		overflow: hidden;
+	&__btn {
+		font-size: 15px;
+		color: $blue;
+	}
 
-		&--left {
-			left: 0;
-			top: 80px;
-			border-top-width: 5px;	
+	&__item {
+		border-top: 1px solid #cacaca;
+		padding: 20px 25px;
+		position: relative;
+		display: flex;
+		align-items: center;	
+
+		&::before {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #e6f1fd;
+			color: $blue;
+			font-size: 15px;
+			font-weight: 600;
 		}
 
-		&--long {
-			top: 80px;
-			left: -470px;
-			width: 1140px;
+		&--violet::before {
+			background-color: #f1ecf9;
+			color: $violet;
+		}
+
+		&--red::before {
+			background-color: #fff0f0;
+			color: $red;
+		}
+
+		&--green::before {
+			background-color: #effaeb;
+			color: $green;
+		}
+
+		&--sum {
+			@include font600;
+			font-size: 18px;
+			color: #000;
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	&__user {
+		flex: 0 0 40px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: inline-block;
+		margin-right: 15px;		
+	}
+
+	&__image {
+		display: block;
+		width: 40px;
+		height: 40px;
+		object-fit: cover;
+
+		&--basket {
+			width: 80px;
+			height: 70px;
+			margin-right: 15px;
+		}
+	}
+
+	&__info {
+		@include font400;
+		width: 100%;
+	}
+
+	&__info-row {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+
+	&__name {
+		max-width: 180px;
+		font-size: 16px;
+		@include font600;
+		color: #000;
+		position: relative;
+		transition: all 0.3s;
+
+		&--email {
+			padding-right: 30px;
+
+			&::before {
+				position: absolute;
+				right: 0;
+				font-family: 'Linearicons-Free';
+				color: #cacaca;
+			}
+		}
+
+		&--active::before {
+			color: $blue;
+		}
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	&__link {
+		color: $blue;
+	}
+
+	&__date {
+		font-size: 14px;
+		color: #747a86;
+
+		&--active {
+			color: $blue;
+		}
+	}
+
+	&__delete {
+		flex: 0 0 30px;
+		cursor: pointer;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #f1ecf9;
+		border-radius: 50%;
+		background-color: #f1ecf9;
+		margin-right: 10px;
+		outline: transparent;
+		transition: all 0.3s;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 15px;
+			line-height: 28px;
+			font-family: 'Linearicons-Free';
+		}
+
+		&:hover {
+			background-color: lighten($violet, 20%);
+			color: #fff;
+		}
+
+		&:focus {
+			border-color: $sky;
+		}
+
+		&:active {
+			background-color: lighten($violet, 10%);
+		}
+	}
+
+	&__subtitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__category {
+		@include font400;
+		font-size: 15px;
+		color: $violet;
+		display: block;
+		padding-left: 20px;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 2px;
+		}
+	}
+
+	&__value {
+		color: $blue;
+		@include font500;
+		padding: 5px 10px;
+		border-radius: 40px;
+		background-color: #e6f1fd;
+	}
+
+	&__sum-name {
+		margin-right: 25px;
+	}
+
+	&__buttons {
+		height: 60px;
+		display: flex;
+	}
+
+	&__basket-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		padding: 0 10px;
+		border: 1px solid $violet;
+		background-color: $violet;
+		color: #fff;
+		outline: transparent;
+
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: lighten($violet, 20%);
+		}
+
+		&:focus {
+			background-color: #fff;
+			color: $violet;
+			border-color: $sky;
+		}
+
+		&:active {
+			background-color: darken($violet, 20%);
+			color: #fff;
+		}
+
+		&--blue {
+			background-color: $blue;
+			border-color: $blue;
+
+			&:hover {
+				background-color: lighten($blue, 20%);
+			}
+
+			&:focus {
+				color: $blue;
+			}
+
+			&:active {
+				background-color: darken($blue, 20%);
+			}
 		}
 	}
 
 	&__menu-list {
-		background-color: #fff;
 		list-style: none;
 		margin: 0;
-		padding: 0;
-		transition: all 0.5s;
+		padding: 20px 0;
 	}
 
 	&__menu-item {
@@ -309,7 +601,20 @@
 		@include font400;
 		font-size: 15px;
 		color: #54667a;
-		padding: 12.5px 10px;
+		padding: 10px;
+		line-height: 24px;
+
+		&--decor {
+			position: relative;
+			padding-left: 35px;
+
+			&::before {
+				position: absolute;
+				left: 10px;
+				font-family: 'Linearicons-Free';
+			}
+		}
+
 		transition: all 0.3s;
 
 		&:hover {
@@ -318,12 +623,23 @@
 		}
 	}
 
-	&__label {
-		padding: 20px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		transition: all 0.5s;
+	&__btn {
+		cursor: pointer;
+		background-color: transparent;
+		padding: 10px 15px;
+		font-size: 15px;
+		@include font500;
+		color: $blue;
+		border: 1px solid transparent;
+		outline: transparent;
+
+		&:focus {
+			border-color: $sky;
+		}
+
+		&:active {
+			text-shadow: 1px 1px 1px $blue;
+		}
 	}
 
 	&__row {
@@ -352,81 +668,48 @@
 		padding-right: 5px;
 	}
 
-	&__title {
-		font-size: 18px;
-		@include font500;
-
-		&--shift {
-			margin-left: 30px;
-		}
-	}
-
-	&__btn {
-		cursor: pointer;
-		background-color: transparent;
-		padding: 10px 15px;
-		font-size: 15px;
-		@include font500;
-		color: $blue;
-		border: 1px solid transparent;
-		outline: transparent;
-
-		&:focus {
-			border-color: $sky;
-		}
-
-		&:active {
-			text-shadow: 1px 1px 1px $blue;
-		}
-	}
-
-	&__item {
+	&--alarm {
 		padding: 0 25px;
-		display: flex;
-		align-items: center;
-		border-top: 1px solid #ececec;
-		transition: all 0.5s;
-	}
+		left: 0;
 
-	&__user {
-		flex: 0 0 40px;
-		display: block;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		overflow: hidden;
-		margin-right: 15px;
-	}
-
-	&__image {
-		width: 40px;
-		height: 40px;
-		object-fit: cover;
-	}
-
-	&__info {
-		width: 100%;
-	}
-
-	&__box:hover {
 		.dropdown {
-			&__menu-list {
+			&__item,
+			&__label {
 				padding: 20px 0;
 			}
 
-			&__label {
-				padding: 15px 20px;
+			&__info {
+				max-width: 210px;
 			}
 
-			&__item {
-				padding: 20px 25px;
-			}
-
-			&__menu {
-				height: auto;
-				overflow: visible;
+			&__name {
+				padding-right: 0;
 			}
 		}
+
+		&.decor::after {
+			left: 15px;
+		}
+	}
+
+	&--basket {
+		width: 400px;
+	}
+
+	&--user {
+		width: 270px;
+	}
+
+	&--left {
+		left: 0;
+		top: 80px;
+		border-top-width: 5px;
+	}
+
+	&--long {
+		top: 80px;
+		left: -470px;
+		width: 1140px;
 	}
 }
 
@@ -541,129 +824,6 @@
 		}
 	}
 
-	&__delete {
-		cursor: pointer;
-		position: relative;
-		width: 30px;
-		height: 30px;
-		border: 1px solid #f1ecf9;
-		border-radius: 50%;
-		background-color: #f1ecf9;
-		margin-right: 10px;
-		outline: transparent;
-		transition: all 0.3s;
-
-		&::before {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 15px;
-			line-height: 28px;
-			font-family: 'Linearicons-Free';
-		}
-
-		&:hover {
-			background-color: lighten($violet, 20%);
-			color: #fff;
-		}
-
-		&:focus {
-			border-color: $sky;
-		}
-
-		&:active {
-			background-color: lighten($violet, 10%);
-		}
-	}
-
-	&__category {
-		@include font400;
-		font-size: 15px;
-		color: $violet;
-		display: block;
-		padding-left: 20px;
-		position: relative;
-
-		&::before {
-			position: absolute;
-			left: 0;
-			top: 2px;
-		}
-	}
-
-	&__value {
-		color: $blue;
-		@include font500;
-		padding: 5px 10px;
-		border-radius: 40px;
-		background-color: #e6f1fd;
-	}
-
-	&__sum {
-		padding: 0 25px;
-		@include font600;
-		font-size: 18px;
-		color: #000;
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	&__sum-name {
-		margin-right: 25px;
-	}
-
-	&__buttons {
-		height: 60px;
-		display: flex;
-	}
-
-	&__btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 50%;
-		padding: 0 10px;
-		border: 1px solid $violet;
-		background-color: $violet;
-		color: #fff;
-		outline: transparent;
-
-		transition: all 0.3s;
-
-		&:hover {
-			background-color: lighten($violet, 20%);
-		}
-
-		&:focus {
-			background-color: #fff;
-			color: $violet;
-			border-color: $sky;
-		}
-
-		&:active {
-			background-color: darken($violet, 20%);
-			color: #fff;
-		}
-
-		&--blue {
-			background-color: $blue;
-			border-color: $blue;
-
-			&:hover {
-				background-color: lighten($blue, 20%);
-			}
-
-			&:focus {
-				color: $blue;
-			}
-
-			&:active {
-				background-color: darken($blue, 20%);
-			}
-		}
-	}
-
 	&__box:hover {
 		.basket {
 			&__item {
@@ -692,7 +852,10 @@
 	}
 
 	&__img {
-		max-width: 100%;
+		display: block;
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
 	}
 
 	&__info {
@@ -822,8 +985,8 @@
 
 @media (max-width:1430px) {
 	.dropdown {
-		&__menu--long {
-			width: 980px;
+		&--long {
+			max-width: 980px;
 		}
 
 		&__inner {
@@ -858,7 +1021,8 @@
 			top: 100px;
 			left: 0;
 			z-index: 2;
-			width: 100%;
+			width: 100vw;
+			height: 100vh;
 			background-color: $bg;
 			text-align: center;
 			display: none;
@@ -869,15 +1033,20 @@
 			padding-right: 0;
 			margin-bottom: 10px;
 			height: auto;
-			&--dropdown::before {
-				display: block;
-			}
 		}
 
 		&__link {
 			display: block;
-			padding: 10px;
+			text-align-last: left;
+			padding: 14px 70px 14px 30px;
 			background-color: lighten($blue, 40%);
+		}
+
+		&__link-btn {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
 		}
 
 		&__burger {
@@ -888,18 +1057,25 @@
 	}
 
 	.dropdown {
-		&__menu--left,
-		&__menu--long  {
-			top: 39px !important;
-			max-width: 100%;
+
+		&--left,
+		&--long {
+			top: 45px !important;
+			width: 100% !important;
 			display: none;
 		}
 
-		&__menu--long {
-			left: 0;
+		&--long {
+			left: 0 !important;
 		}
 
-	
+		&__title {
+			text-align: left;
+		}
+
+		&__menu-list {
+			text-align: left;
+		}
 
 		&__row {
 			flex-wrap: wrap;
@@ -927,6 +1103,33 @@
 			}
 		}
 
+		&__links {
+			margin-right: 5px;
+		}
+
+		&__box {
+			min-width: 50px;
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__button {
+			display: block;
+		}
+
+		&__link,
+		&__user {
+			position: absolute;
+			top: 3px;
+		}
+
+		&__user-icon {
+			margin-right: 0;
+		}
+
 		&__btn-menu {
 			display: block;
 		}
@@ -937,87 +1140,31 @@
 	}
 
 	.dropdown {
-		&__menu {
-			left: 0;
-			top: 115px;
-			width: 295px;
+		position: absolute;
+
+		&--alarm,
+		&--email,
+		&--basket,
+		&--user {
+			width: 300px !important;
 		}
 
-		&__box {
-			width: 55px;
-			top: -15px;
-
-			&::before {
-				display: block;
-			}
+		&__button {
+			display: block;
 		}
 
-		&__item {
-			padding: 20px 10px !important;
+		&__menu-list {
+			text-align: left;
 		}
-	}
 
-	.alarm {
 		&__item::before {
-			right: 10px;
-			top: 75%;
-		}
-	}
-
-	.email {
-		&__box {
-			.decor::after {
-				left: 75px;
-			}
-		}
-
-		&__menu {
-			left: -55px;
-
-		}
-	}
-
-	.basket {
-		&__box {
-			.decor::after {
-				left: 130px;
-			}
-		}
-
-		&__menu {
-			left: -110px;
-			width: 295px;
-		}
-
-		&__item {
-			padding: 20px 10px !important;
-		}
-
-		&__title {
-			flex-wrap: wrap;
-			margin-bottom: 10px;
-		}
-
-		&__name {
-			margin-bottom: 5px;
-		}
-
-		&__delete {
-			margin-left: auto;
+			top: 70% !important;
 		}
 	}
 
 	.user {
-		&__box {
-			margin-left: 15px;
-
-			.decor:after {
-				right: 77px;
-			}
-		}
-
-		&__menu {
-			left: -180px;
+		&__icon {
+			margin-right: 0;
 		}
 
 		&__info {
@@ -1035,19 +1182,47 @@
 		&__items {
 			width: 300px;
 		}
+	}
 
-		&__links {
-			margin: 0;
+	.dropdown {
+		&--email {
+			left: -58px;
 		}
 
-		&__user {
-			margin-left: 20px;
+		&--basket {
+			left: -115px;
+		}
+
+		&--user {
+			left: -174px;
+		}
+
+		&__title {
+			padding-left: 5px;
+
+			&--basket {
+				flex-wrap: wrap;
+			}
+		}	
+
+		&__info-row {
+			flex-wrap: wrap;
+		}
+
+		&__name--email {
+			margin-bottom: 5px;
+		}
+
+
+		&__row-item {
+			width: 100%;
+		}
+
+		&__column {
+			min-width: 100%;
 		}
 	}
 }
-
-
-
 
 
 

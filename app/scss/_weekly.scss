@@ -39,7 +39,7 @@
 @media (max-width: 576px) {
 	.weekly {
 		&__arrows {
-			width: 200px;
+			display: none;
 		}
 	}
 }

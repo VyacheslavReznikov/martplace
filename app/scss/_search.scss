@@ -1,7 +1,10 @@
 .search {
 	position: relative;
 
-	&__inner {
+	&__form {
+		position: relative;
+		display: flex;
+
 		height: 135px;
 		padding: 0 40px;
 		background: #fff;
@@ -38,10 +41,6 @@
 			border-radius: 6px;
 			z-index: -1;
 		}
-	}
-
-	&__form {
-		display: flex;
 	}
 
 	&__box {
@@ -87,6 +86,7 @@
 		cursor: pointer;
 		color: #fff;
 		width: 223px;
+		height: 54px;
 		background-color: $blue;
 		border: none;
 		border-radius: 4px;
@@ -115,7 +115,7 @@
 @media (max-width: 992px) {
 	.search {
 
-		&__inner {
+		&__form {
 			padding: 0 30px;
 			top: 0;
 		}
@@ -145,6 +145,12 @@
 
 @media (max-width:768px) {
 	.search {
+		&__form {
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
 		&__box {
 			display: flex;
 			flex-wrap: wrap;
@@ -153,7 +159,7 @@
 
 		&__input {
 			width: 450px;
-			padding-right: 15px;
+			padding-right: 60px;
 			margin-bottom: 10px;
 		}
 
@@ -162,31 +168,41 @@
 			left: 0;
 			width: 450px;
 		}
+
+		&__btn {
+			position: absolute;
+			border-radius: 4px;
+			top: 7px;
+			right: 30px;
+			width: 52px;
+			height: 54px;
+		}
 	}
 }
 
 @media (max-width:576px) {
 	.search {
-		&__inner {
-			padding: 0 10px;
-
-			&::before,
-			&::after {
-				display: none;
-			}
-		}
 
 		&__form {
+			padding: 10px;
 			width: 100%;
 			flex-direction: column;
 		}
 
 		&__input,
-		&__select,
-		&__btn {
+		&__select {
 			margin-bottom: 10px;
+			padding-left: 10px;
 			width: 300px;
-			height: 30px;
+			height: 54px;
+		}
+
+		&__select {
+			margin-bottom: 0;	
+		}
+		&__btn {
+			left: 257px;
+			top: 9px;
 		}
 	}
 }
