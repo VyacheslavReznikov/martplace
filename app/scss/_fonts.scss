@@ -233,6 +233,11 @@
 	content: "\e879";
 }
 
+//arrow right
+.lnr-arrow-right:before {
+	content: "\e87a";
+}
+
 //arrow down
 .lnr-chevron-down:before {
 	content: "\e874";
@@ -245,10 +250,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:
-		url('../fonts/icomoon.woff?x00xko') format('woff'),
-		url('../fonts/icomoon.ttf?x00xko') format('truetype'),
-		url('../fonts/icomoon.svg?x00xko#icomoon') format('svg');
+	src: url('../fonts/icomoon.eot?v18008');
+	src: url('../fonts/icomoon.woff?v18008') format('woff'),
+		url('../fonts/icomoon.ttf?v18008') format('truetype'),
+		url('../fonts/icomoon.eot?v18008#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg?v18008#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -268,14 +274,6 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-list:before {
-	content: "\e9ba";
-}
-
-.icon-circle-o:before {
-  content: "\f10c";
 }
 
 .icon-document-file-psd:before {
@@ -302,6 +300,14 @@
 	content: "\f0d2";
 }
 
+.icon-angle-right:before {
+	content: "\f105";
+}
+
+.icon-circle-o:before {
+	content: "\f10c";
+}
+
 .icon-mail-reply:before {
 	content: "\f112";
 }
@@ -326,7 +332,9 @@
 	content: "\f1a0";
 }
 
-
+.icon-list:before {
+	content: "\e9ba";
+}
 
 .icon-linkedin2:before {
 	content: "\eaca";
