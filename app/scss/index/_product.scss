@@ -595,6 +595,37 @@
 				&__img {
 					width: 100%;
 				}
+
+				&__text,
+				&__like,
+				&__commit {
+					display: block;
+				}
+
+				&__like {
+					margin-bottom: 10px;					
+				}
+
+				&__commit {
+					position: relative;
+					padding-left: 20px;
+					margin-bottom: 20px;
+					&::before {
+						position: absolute;
+						left: 0;
+					}
+				}
+
+				&__block--items {
+					.product__box {
+						display: flex;
+						flex-direction: column;
+						align-items: start;
+					}
+				}
+				&__stars {									
+					order: 3;
+				}			
 			}
 		}
 	}
@@ -626,10 +657,6 @@
 			.product {
 				&__img {
 					min-height: 250px;
-				}
-
-				&__text {
-					display: block;
 				}
 			}
 		}
