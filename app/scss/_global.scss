@@ -16,6 +16,15 @@ body {
 	background-color: $bg;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -87,9 +96,10 @@ a {
 
 .label {
 	text-align: center;
-	max-width: 675px;
+	max-width: 705px;
 	margin: 0 auto;
 	margin-bottom: 50px;
+	padding: 0 15px;
 
 	&__title {
 		font-size: 36px;
@@ -472,6 +482,7 @@ a {
 		&::after {
 			content: "/";
 			position: absolute;
+			color: #fff;
 			right: 0;
 		}
 
@@ -521,11 +532,11 @@ a {
 				&:hover {
 					background-color: lighten($violet, 20%);
 				}
-		
+
 				&:focus {
 					border-color: #000;
 				}
-		
+
 				&:active {
 					background-color: darken($violet, 10%);
 				}
@@ -583,7 +594,7 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 0.3s;	
+		transition: all 0.3s;
 
 		&:hover {
 			background-color: lighten($blue, 40%);

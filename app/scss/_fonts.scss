@@ -203,6 +203,11 @@
 	content: "\e820";
 }
 
+//inbox
+.lnr-inbox:before {
+	content: "\e81a";
+}
+
 //book
 .lnr-book:before {
 	content: "\e828";
@@ -261,7 +266,7 @@
 }
 
 [class^="icon-"],
-[class*=" icon-"] {
+[class*=" icon-"]:before {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
 	speak: never;
@@ -277,65 +282,53 @@
 }
 
 .icon-document-file-psd:before {
-	content: "\e900";
+  content: "\e900";
 }
-
 .icon-th-large:before {
-	content: "\f009";
+  content: "\f009";
 }
-
 .icon-twitter:before {
-	content: "\f099";
+  content: "\f099";
 }
-
 .icon-facebook:before {
-	content: "\f09a";
+  content: "\f09a";
 }
-
 .icon-facebook-f:before {
-	content: "\f09a";
+  content: "\f09a";
 }
-
 .icon-pinterest:before {
-	content: "\f0d2";
+  content: "\f0d2";
 }
-
 .icon-angle-right:before {
-	content: "\f105";
+  content: "\f105";
 }
-
 .icon-circle-o:before {
-	content: "\f10c";
+  content: "\f10c";
 }
-
 .icon-mail-reply:before {
-	content: "\f112";
+  content: "\f112";
 }
-
 .icon-reply:before {
-	content: "\f112";
+  content: "\f112";
 }
-
 .icon-html5:before {
-	content: "\f13b";
+  content: "\f13b";
 }
-
 .icon-dribbble:before {
-	content: "\f17d";
+  content: "\f17d";
 }
-
 .icon-wordpress:before {
-	content: "\f19a";
+  content: "\f19a";
 }
-
 .icon-google:before {
-	content: "\f1a0";
+  content: "\f1a0";
 }
-
 .icon-list:before {
-	content: "\e9ba";
+  content: "\e9ba";
 }
-
+.icon-checkmark:before {
+  content: "\ea10";
+}
 .icon-linkedin2:before {
-	content: "\eaca";
+  content: "\eaca";
 }

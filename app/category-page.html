@@ -706,89 +706,84 @@
 
 									<div class="aside__box">
 										<button class="aside__title lnr lnr-chevron-down" type="button">Categories</button>
-										<ul class="aside__list">
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-wordpress">
-													<span class="aside__name lnr lnr-chevron-right">Wordpress</span>
-													<span class="aside__number">35</span>
-												</button>
-											</li>
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-page">
-													<span class="aside__name lnr lnr-chevron-right">Landing Page</span>
-													<span class="aside__number">45</span>
-												</button>
-											</li>
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-psd">
-													<span class="aside__name lnr lnr-chevron-right">PSD Template</span>
-													<span class="aside__number">13</span>
-												</button>
-											</li>
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-plugin">
-													<span class="aside__name lnr lnr-chevron-right">Plugins</span>
-													<span class="aside__number">08</span>
-												</button>
-											</li>
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-html">
-													<span class="aside__name lnr lnr-chevron-right">HTML Template</span>
-													<span class="aside__number">35</span>
-												</button>
-											</li>
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-components">
-													<span class="aside__name lnr lnr-chevron-right">Components</span>
-													<span class="aside__number">78</span>
-												</button>
-											</li>
-											<li class="aside__item">
-												<button class="aside__link" type="button" data-filter=".category-joomla">
-													<span class="aside__name lnr lnr-chevron-right">Joomla Template</span>
-													<span class="aside__number">26</span>
-												</button>
-											</li>
-										</ul>
+										<div class="aside__list">
+
+											<button class="aside__list-btn" type="button" data-filter=".category-wordpress">
+												<span class="aside__name lnr lnr-chevron-right">Wordpress</span>
+												<span class="aside__number">35</span>
+											</button>
+
+											<button class="aside__list-btn" type="button" data-filter=".category-page">
+												<span class="aside__name lnr lnr-chevron-right">Landing Page</span>
+												<span class="aside__number">45</span>
+											</button>
+
+											<button class="aside__list-btn" type="button" data-filter=".category-psd">
+												<span class="aside__name lnr lnr-chevron-right">PSD Template</span>
+												<span class="aside__number">13</span>
+											</button>
+
+											<button class="aside__list-btn" type="button" data-filter=".category-plugin">
+												<span class="aside__name lnr lnr-chevron-right">Plugins</span>
+												<span class="aside__number">08</span>
+											</button>
+
+											<button class="aside__list-btn" type="button" data-filter=".category-html">
+												<span class="aside__name lnr lnr-chevron-right">HTML Template</span>
+												<span class="aside__number">35</span>
+											</button>
+
+											<button class="aside__list-btn" type="button" data-filter=".category-components">
+												<span class="aside__name lnr lnr-chevron-right">Components</span>
+												<span class="aside__number">78</span>
+											</button>
+
+											<button class="aside__list-btn" type="button" data-filter=".category-joomla">
+												<span class="aside__name lnr lnr-chevron-right">Joomla Template</span>
+												<span class="aside__number">26</span>
+											</button>
+
+										</div>
 									</div>
 
 									<div class="aside__box">
 										<button class="aside__title lnr lnr-chevron-down" type="button">Filter Products</button>
 										<form class="aside__list">
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-1" name="radio" value="Trending Products">
-												<label class="aside__list-label" for="radio-1" data-sort="random">Trending Products</label>
-											</div>
 
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-2" name="radio" value="Popular Products">
-												<label class="aside__list-label" for="radio-2" data-sort="random">Popular Products</label>
-											</div>
+											<label class="aside__list-label" data-sort="random">
+												<input class="aside__list-input" type="radio" name="radio">
+												Trending Products
+											</label>
 
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-3" name="radio" value="New Products">
-												<label class="aside__list-label" for="radio-3" data-sort="random">New Products</label>
-											</div>
+											<label class="aside__list-label" data-sort="1">
+												<input class="aside__list-input" type="radio" name="radio">
+												Popular Products
+											</label>
 
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-4" name="radio" value="Best Seller">
-												<label class="aside__list-label" for="radio-4" data-sort="random">Best Seller</label>
-											</div>
+											<label class="aside__list-label" data-sort="2">
+												<input class="aside__list-input" type="radio" name="radio">
+												New Products
+											</label>
 
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-5" name="radio" value="Best Rating">
-												<label class="aside__list-label" for="radio-5" data-sort="random">Best Rating</label>
-											</div>
+											<label class="aside__list-label" data-sort="3">
+												<input class="aside__list-input" type="radio" name="radio">
+												Best Seller
+											</label>
 
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-6" name="radio" value="Low Price">
-												<label class="aside__list-label" for="radio-6" data-sort="random">Low Price</label>
-											</div>
+											<label class="aside__list-label" data-sort="4">
+												<input class="aside__list-input" type="radio" name="radio">
+												Best Rating
+											</label>
 
-											<div class="aside__list-item">
-												<input class="aside__list-input" type="radio" id="radio-7" name="radio" value="High Price">
-												<label class="aside__list-label" for="radio-7" data-sort="random">High Price</label>
-											</div>
+											<label class="aside__list-label" data-sort="5">
+												<input class="aside__list-input" type="radio" name="radio">
+												Low Price
+											</label>
+
+											<label class="aside__list-label" data-sort="6">
+												<input class="aside__list-input" type="radio" name="radio">
+												High Price
+											</label>
 
 										</form>
 									</div>

@@ -159,9 +159,7 @@
 	}
 
 	&__list {
-		list-style: none;
-		margin: 0;
-		padding: 15px 10px 10px;
+		padding: 20px;
 		position: relative;
 
 		&::after {
@@ -175,19 +173,63 @@
 		}
 	}
 
-	&__list-item {
+	&__list-btn {
+		cursor: pointer;
+		width: 100%;
 		display: flex;
-		padding: 10px 20px;
+		justify-content: space-between;
+		padding: 7px 10px;
+		margin-bottom: 2px;
+		border: 1px solid transparent;
+		background-color: transparent;
+		outline: transparent;
+		transition: all 0.3s;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			.aside {
+
+				&__number,
+				&__name,
+				&__name::before {
+					color: $blue;
+				}
+			}
+		}
+
+		&:focus {
+			background-color: $blue;
+
+			.aside {
+
+				&__number,
+				&__name,
+				&__name::before {
+					color: #fff;
+				}
+			}
+		}
+
+		&:active {
+			text-shadow: 1px 1px 1px $blue;
+		}
 	}
 
 	&__list-input {
-		margin-right: 10px;
-		position: relative;
-		top: 3px;
+		margin-right: 5px;
+		width: 10px;
+		height: 10px;
 	}
 
 	&__list-label {
+		display: block;
+		padding: 7px 10px;
+		margin-bottom: 2px;
 		width: 100%;
+		border: 1px solid transparent;
 		cursor: pointer;
 		transition: all 0.3s;
 
@@ -201,60 +243,8 @@
 
 		&.mixitup-control-active {
 			background-color: transparent;
-			color: $red;
-		}
-	}
-
-	&__item {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 1px 0;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	&__link {
-		cursor: pointer;
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		padding: 10px 20px 10px 0;
-		font-size: 15px;
-		color: #555;
-		background-color: transparent;
-		outline: transparent;
-		border: 1px solid transparent;
-		padding-left: 20px;
-		position: relative;
-		transition: all 0.3s;
-
-		&:hover {
 			color: $blue;
-		}
-
-		&:focus {
-			border-color: $blue;
-		}
-
-		&:active {
-			text-shadow: 1px 1px 1px $blue;
-		}
-
-		&--filter {
-			cursor: pointer;
-			width: 100%;
-			text-align: left;
-			border: none;
-			background-color: transparent;
-			padding-top: 10px;
-			padding-bottom: 10px;
-
-			&::before {
-				font-family: 'icomoon';
-			}
+			border: 1px solid $blue;
 		}
 	}
 
@@ -327,6 +317,11 @@
 			display: none;
 			padding: 10px 30px;
 		}
+
+		&__list-btn,
+		&__list-label {
+			padding: 12px 10px;
+		}
 	}
 }
 
@@ -372,8 +367,8 @@
 	}
 
 	.aside {
-		&__link {
-			padding: 15px 5px 15px 20px;
+		&__list {
+			padding: 15px 10px;
 		}
 	}
 }
