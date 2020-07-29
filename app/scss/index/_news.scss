@@ -17,57 +17,6 @@
 		border-top: 1px solid #ececec;
 	}
 
-	// &__items-box {
-	// 	width: 50%;
-	// 	position: relative;
-	// 	display: flex;
-	// 	align-items: center;
-
-	// 	&::after {
-	// 		content: "";
-	// 		position: absolute;
-	// 		width: 1px;
-	// 		height: 40px;
-	// 		background-color: #ececec;
-	// 		top: 50%;
-	// 		transform: translateY(-50%);
-	// 		right: 0;
-	// 	}
-
-	// 	&:last-child {
-	// 		&::after {
-	// 			display: none;
-	// 		}
-	// 	}
-	// }
-
-	// &__date,
-	// &__commit,
-	// &__view {
-	// 	padding-left: 25px;
-	// 	position: relative;
-
-	// 	&::before {
-	// 		position: absolute;
-	// 		left: 0;
-	// 		top: 2px;
-	// 		font-size: 15px;
-	// 		color: #7e7e7e;
-	// 	}
-	// }
-
-	// &__date {
-	// 	&::before {
-	// 		color: $blue;
-	// 		font-weight: 700;
-	// 	}
-	// }
-
-	// &__commit,
-	// &__view {
-	// 	margin-left: auto;
-	// }
-
 	.product__title {
 		font-size: 22px;
 		margin-bottom: 20px;
@@ -83,12 +32,12 @@
 
 @media (max-width: 1200px) {
 	.news {
-		padding: 50px 0;		
+		padding: 50px 0;
 
 		&__inner {
 			flex-wrap: wrap;
 			justify-content: space-around;
-		}	
+		}
 	}
 }
 

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MartPlace</title>
+	<title>Categories</title>
 	<link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -24,7 +24,7 @@
 							</a>
 
 							<div class="header__items">
-								<a class="header__seller btn btn--small btn--blue" href="#">Become a Seller</a>
+								<a class="header__seller button button--blue" href="#">Become a Seller</a>
 
 								<div class="header__links">
 
@@ -192,9 +192,9 @@
 										<div class="dropdown dropdown--basket decor">
 
 											<div class="dropdown__item">
-												<img class="dropdown__image dropdown__image--basket" src="images/content/html.jpg" alt="html">
+												<img class="dropdown__image" src="images/content/html.jpg" alt="html">
 												<div class="dropdown__info">
-													<div class="dropdown__title dropdown__title--basket">
+													<div class="dropdown__title">
 														<a class="dropdown__name" href="#">Finance and Consulting Business Theme</a>
 														<button class="dropdown__delete lnr lnr-trash" type="button"></button>
 													</div>
@@ -206,9 +206,9 @@
 											</div>
 
 											<div class="dropdown__item">
-												<img class="dropdown__image dropdown__image--basket" src="images/content/psd.jpg" alt="psd">
+												<img class="dropdown__image" src="images/content/psd.jpg" alt="psd">
 												<div class="dropdown__info">
-													<div class="dropdown__title dropdown__title--basket">
+													<div class="dropdown__title">
 														<a class="dropdown__name" href="#">Flounce - Multipurpose OpenCart Theme</a>
 														<button class="dropdown__delete lnr lnr-trash" type="button"></button>
 													</div>
@@ -249,43 +249,42 @@
 									<div class="dropdown dropdown--user decor">
 										<ul class="dropdown__menu-list">
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-user" href="#">Profile Page</a>
+												<a class="dropdown__menu-link lnr lnr-user" href="#">Profile Page</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-home" href="#">Dashboard</a>
+												<a class="dropdown__menu-link lnr lnr-home" href="#">Dashboard</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-cog" href="#">Account
+												<a class="dropdown__menu-link lnr lnr-cog" href="#">Account
 													Settings</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-cart" href="#">Your
+												<a class="dropdown__menu-link lnr lnr-cart" href="#">Your
 													Purchases</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-heart" href="#">Your
+												<a class="dropdown__menu-link lnr lnr-heart" href="#">Your
 													Favorites</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-dice" href="#">Add Credits</a>
+												<a class="dropdown__menu-link lnr lnr-dice" href="#">Add Credits</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-chart-bars" href="#">Sales
+												<a class="dropdown__menu-link lnr lnr-chart-bars" href="#">Sales
 													Statements</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-upload" href="#">Upload
+												<a class="dropdown__menu-link lnr lnr-upload" href="#">Upload
 													Item</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-book" href="#">Edit Item</a>
+												<a class="dropdown__menu-link lnr lnr-book" href="#">Edit Item</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-briefcase"
-													href="#">Withdrawals</a>
+												<a class="dropdown__menu-link lnr lnr-briefcase" href="#">Withdrawals</a>
 											</li>
 											<li class="dropdown__menu-item">
-												<a class="dropdown__menu-link dropdown__menu-link--decor lnr lnr-exit" href="#">Logout</a>
+												<a class="dropdown__menu-link lnr lnr-exit" href="#">Logout</a>
 											</li>
 										</ul>
 									</div>
@@ -627,9 +626,9 @@
 								<button class="menu__burger">burger</button>
 							</nav>
 
-							<form class="header__form">
-								<input class="header__form-search" type="search" placeholder="Search product here..." required>
-								<button class="header__form-btn lnr lnr-magnifier" type="submit">search</button>
+							<form class="header__form mini-search">
+								<input class="mini-search__input" type="search" placeholder="Search product here..." required>
+								<button class="mini-search__btn lnr lnr-magnifier" type="submit">search</button>
 							</form>
 						</div>
 
@@ -643,10 +642,9 @@
 					<div class="container">
 						<div class="category-screen__inner">
 							<div class="category-screen__title"><span>4,572 </span> wordpress themes, made with love</div>
-							<form class="category-screen__form header__form">
-								<input class="category-screen__input header__form-search" type="search"
-									placeholder="Search your products" required>
-								<button class="category-screen__btn header__form-btn lnr lnr-magnifier" type="submit">Search</button>
+							<form class="category-screen__form mini-search">
+								<input class="mini-search__input" type="search" placeholder="Search your products" required>
+								<button class="mini-search__btn lnr lnr-magnifier" type="submit">Search</button>
 							</form>
 							<div class="breadcrumbs">
 								<ul class="breadcrumbs__list">
@@ -662,660 +660,690 @@
 					</div>
 				</section>
 
-				<div class="product-page__header">
-					<div class="container">
-						<div class="product-page__row">
-							<div class="product-page__filter">
-								<button class="product-page__btn" type="button" data-filter=".category-new">New Products</button>
-								<button class="product-page__btn" type="button" data-filter=".category-popular">Popular Products</button>
-							</div>
-							<div class="product-page__box">
-								<select class="product-page__price">
-									<option class="product-page__option">Price : Low to High</option>
-								</select>
-								<select class="product-page__number">
-									<option class="product-page__option">12 Items Per Page</option>
-								</select>
-								<div class="product-page__buttons">
-									<button class="product-page__button product-page__button--grid" type="button">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-											height="20px">
-											<path fill-rule="evenodd" fill="rgb(116, 123, 134)"
-												d="M19.526,19.903 L0.474,19.903 C0.245,19.903 0.059,19.716 0.059,19.485 L0.059,0.514 C0.059,0.283 0.245,0.095 0.474,0.095 L19.526,0.095 C19.755,0.095 19.941,0.283 19.941,0.514 L19.941,19.485 C19.941,19.716 19.755,19.903 19.526,19.903 ZM19.111,10.418 L18.584,10.418 C18.355,10.418 18.169,10.231 18.169,10.000 C18.169,9.769 18.355,9.581 18.584,9.581 L19.111,9.581 L19.111,0.933 L10.415,0.933 L10.415,1.351 C10.415,1.582 10.229,1.769 10.000,1.769 C9.770,1.769 9.585,1.582 9.585,1.351 L9.585,0.933 L0.889,0.933 L0.889,9.581 L1.416,9.581 C1.645,9.581 1.831,9.769 1.831,10.000 C1.831,10.231 1.645,10.418 1.416,10.418 L0.889,10.418 L0.889,19.066 L9.585,19.066 L9.585,18.648 C9.585,18.417 9.771,18.230 10.000,18.230 C10.229,18.230 10.415,18.417 10.415,18.648 L10.415,19.066 L19.111,19.066 L19.111,10.418 ZM10.415,10.786 C10.415,11.017 10.229,11.204 10.000,11.204 C9.770,11.204 9.585,11.017 9.585,10.786 L9.585,10.418 L9.219,10.418 C8.990,10.418 8.804,10.231 8.804,10.000 C8.804,9.769 8.990,9.581 9.219,9.581 L9.585,9.581 L9.585,9.213 C9.585,8.982 9.771,8.795 10.000,8.795 C10.229,8.795 10.415,8.982 10.415,9.213 L10.415,9.581 L10.780,9.581 C11.010,9.581 11.196,9.769 11.196,10.000 C11.196,10.231 11.010,10.418 10.780,10.418 L10.415,10.418 L10.415,10.786 ZM12.341,9.581 L13.902,9.581 C14.131,9.581 14.317,9.769 14.317,10.000 C14.317,10.231 14.131,10.418 13.902,10.418 L12.341,10.418 C12.112,10.418 11.926,10.231 11.926,10.000 C11.926,9.769 12.112,9.581 12.341,9.581 ZM15.463,9.581 L17.024,9.581 C17.253,9.581 17.439,9.769 17.439,10.000 C17.439,10.231 17.253,10.418 17.024,10.418 L15.463,10.418 C15.233,10.418 15.047,10.231 15.047,10.000 C15.047,9.769 15.233,9.581 15.463,9.581 ZM10.000,8.059 C9.770,8.059 9.585,7.872 9.585,7.641 L9.585,6.068 C9.585,5.837 9.771,5.650 10.000,5.650 C10.229,5.650 10.415,5.837 10.415,6.068 L10.415,7.641 C10.415,7.872 10.229,8.059 10.000,8.059 ZM10.000,4.914 C9.770,4.914 9.585,4.727 9.585,4.496 L9.585,2.923 C9.585,2.692 9.771,2.505 10.000,2.505 C10.229,2.505 10.415,2.692 10.415,2.923 L10.415,4.496 C10.415,4.727 10.229,4.914 10.000,4.914 ZM7.659,10.418 L6.098,10.418 C5.868,10.418 5.682,10.231 5.682,10.000 C5.682,9.769 5.868,9.581 6.098,9.581 L7.659,9.581 C7.888,9.581 8.074,9.769 8.074,10.000 C8.074,10.231 7.888,10.418 7.659,10.418 ZM4.537,10.418 L2.976,10.418 C2.747,10.418 2.561,10.231 2.561,10.000 C2.561,9.769 2.747,9.581 2.976,9.581 L4.537,9.581 C4.767,9.581 4.953,9.769 4.953,10.000 C4.953,10.231 4.767,10.418 4.537,10.418 ZM10.000,11.940 C10.229,11.940 10.415,12.127 10.415,12.358 L10.415,13.931 C10.415,14.162 10.229,14.349 10.000,14.349 C9.770,14.349 9.585,14.162 9.585,13.931 L9.585,12.358 C9.585,12.127 9.771,11.940 10.000,11.940 ZM10.000,15.085 C10.229,15.085 10.415,15.272 10.415,15.503 L10.415,17.075 C10.415,17.307 10.229,17.494 10.000,17.494 C9.770,17.494 9.585,17.307 9.585,17.075 L9.585,15.503 C9.585,15.272 9.771,15.085 10.000,15.085 Z" />
-										</svg>
-									</button>
-									<button class="product-page__button product-page__button--list" type="button">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px"
-											height="19px">
-											<path fill-rule="evenodd" fill="rgb(116, 123, 134)"
-												d="M19.723,15.636 L7.511,15.636 C7.349,15.636 7.218,15.507 7.218,15.348 C7.218,15.190 7.349,15.061 7.511,15.061 L19.723,15.061 C19.885,15.061 20.016,15.190 20.016,15.348 C20.016,15.507 19.885,15.636 19.723,15.636 ZM19.723,10.724 L7.511,10.724 C7.349,10.724 7.218,10.595 7.218,10.436 C7.218,10.278 7.349,10.149 7.511,10.149 L19.723,10.149 C19.885,10.149 20.016,10.278 20.016,10.436 C20.016,10.595 19.885,10.724 19.723,10.724 ZM19.723,8.882 L7.511,8.882 C7.349,8.882 7.218,8.753 7.218,8.594 C7.218,8.436 7.349,8.307 7.511,8.307 L19.723,8.307 C19.885,8.307 20.016,8.436 20.016,8.594 C20.016,8.753 19.885,8.882 19.723,8.882 ZM19.723,3.970 L7.511,3.970 C7.349,3.970 7.218,3.842 7.218,3.683 C7.218,3.524 7.349,3.395 7.511,3.395 L19.723,3.395 C19.885,3.395 20.016,3.524 20.016,3.683 C20.016,3.842 19.885,3.970 19.723,3.970 ZM19.723,2.129 L7.511,2.129 C7.349,2.129 7.218,1.999 7.218,1.841 C7.218,1.682 7.349,1.553 7.511,1.553 L19.723,1.553 C19.885,1.553 20.016,1.682 20.016,1.841 C20.016,1.999 19.885,2.129 19.723,2.129 ZM4.693,19.013 L0.936,19.013 C0.429,19.013 0.016,18.608 0.016,18.111 L0.016,14.427 C0.016,13.930 0.429,13.526 0.936,13.526 L4.693,13.526 C5.201,13.526 5.613,13.930 5.613,14.427 L5.613,18.111 C5.613,18.608 5.201,19.013 4.693,19.013 ZM5.026,14.427 C5.026,14.247 4.877,14.101 4.693,14.101 L0.936,14.101 C0.753,14.101 0.603,14.247 0.603,14.427 L0.603,18.111 C0.603,18.291 0.753,18.437 0.936,18.437 L4.693,18.437 C4.877,18.437 5.026,18.291 5.026,18.111 L5.026,14.427 ZM4.693,12.259 L0.936,12.259 C0.429,12.259 0.016,11.855 0.016,11.358 L0.016,7.674 C0.016,7.176 0.429,6.772 0.936,6.772 L4.693,6.772 C5.201,6.772 5.613,7.176 5.613,7.674 L5.613,11.358 C5.613,11.855 5.201,12.259 4.693,12.259 ZM5.026,7.674 C5.026,7.493 4.877,7.347 4.693,7.347 L0.936,7.347 C0.753,7.347 0.603,7.493 0.603,7.674 L0.603,11.358 C0.603,11.537 0.753,11.684 0.936,11.684 L4.693,11.684 C4.877,11.684 5.026,11.537 5.026,11.358 L5.026,7.674 ZM4.693,5.505 L0.936,5.505 C0.429,5.505 0.016,5.101 0.016,4.604 L0.016,0.920 C0.016,0.423 0.429,0.018 0.936,0.018 L4.693,0.018 C5.201,0.018 5.613,0.423 5.613,0.920 L5.613,4.604 C5.613,5.101 5.201,5.505 4.693,5.505 ZM5.026,0.920 C5.026,0.740 4.877,0.594 4.693,0.594 L0.936,0.594 C0.753,0.594 0.603,0.740 0.603,0.920 L0.603,4.604 C0.603,4.783 0.753,4.930 0.936,4.930 L4.693,4.930 C4.877,4.930 5.026,4.783 5.026,4.604 L5.026,0.920 ZM7.511,16.902 L19.723,16.902 C19.885,16.902 20.016,17.031 20.016,17.190 C20.016,17.349 19.885,17.478 19.723,17.478 L7.511,17.478 C7.349,17.478 7.218,17.349 7.218,17.190 C7.218,17.031 7.349,16.902 7.511,16.902 Z" />
-										</svg>
-									</button>
+				<section class="product-page">
+
+					<div class="product-page__header">
+						<div class="container">
+							<div class="product-page__row">
+								<div class="product-page__filter">
+									<button class="product-page__btn" type="button" data-filter=".category-new">New Products</button>
+									<button class="product-page__btn" type="button" data-filter=".category-popular">Popular
+										Products</button>
+								</div>
+								<div class="product-page__box">
+									<select class="product-page__price">
+										<option class="product-page__option">Price : Low to High</option>
+									</select>
+									<select class="product-page__number">
+										<option class="product-page__option">12 Items Per Page</option>
+									</select>
+									<div class="product-page__buttons">
+										<button class="product-page__button product-page__button--grid active" type="button">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+												height="20px">
+												<path fill-rule="evenodd" fill="rgb(116, 123, 134)"
+													d="M19.526,19.903 L0.474,19.903 C0.245,19.903 0.059,19.716 0.059,19.485 L0.059,0.514 C0.059,0.283 0.245,0.095 0.474,0.095 L19.526,0.095 C19.755,0.095 19.941,0.283 19.941,0.514 L19.941,19.485 C19.941,19.716 19.755,19.903 19.526,19.903 ZM19.111,10.418 L18.584,10.418 C18.355,10.418 18.169,10.231 18.169,10.000 C18.169,9.769 18.355,9.581 18.584,9.581 L19.111,9.581 L19.111,0.933 L10.415,0.933 L10.415,1.351 C10.415,1.582 10.229,1.769 10.000,1.769 C9.770,1.769 9.585,1.582 9.585,1.351 L9.585,0.933 L0.889,0.933 L0.889,9.581 L1.416,9.581 C1.645,9.581 1.831,9.769 1.831,10.000 C1.831,10.231 1.645,10.418 1.416,10.418 L0.889,10.418 L0.889,19.066 L9.585,19.066 L9.585,18.648 C9.585,18.417 9.771,18.230 10.000,18.230 C10.229,18.230 10.415,18.417 10.415,18.648 L10.415,19.066 L19.111,19.066 L19.111,10.418 ZM10.415,10.786 C10.415,11.017 10.229,11.204 10.000,11.204 C9.770,11.204 9.585,11.017 9.585,10.786 L9.585,10.418 L9.219,10.418 C8.990,10.418 8.804,10.231 8.804,10.000 C8.804,9.769 8.990,9.581 9.219,9.581 L9.585,9.581 L9.585,9.213 C9.585,8.982 9.771,8.795 10.000,8.795 C10.229,8.795 10.415,8.982 10.415,9.213 L10.415,9.581 L10.780,9.581 C11.010,9.581 11.196,9.769 11.196,10.000 C11.196,10.231 11.010,10.418 10.780,10.418 L10.415,10.418 L10.415,10.786 ZM12.341,9.581 L13.902,9.581 C14.131,9.581 14.317,9.769 14.317,10.000 C14.317,10.231 14.131,10.418 13.902,10.418 L12.341,10.418 C12.112,10.418 11.926,10.231 11.926,10.000 C11.926,9.769 12.112,9.581 12.341,9.581 ZM15.463,9.581 L17.024,9.581 C17.253,9.581 17.439,9.769 17.439,10.000 C17.439,10.231 17.253,10.418 17.024,10.418 L15.463,10.418 C15.233,10.418 15.047,10.231 15.047,10.000 C15.047,9.769 15.233,9.581 15.463,9.581 ZM10.000,8.059 C9.770,8.059 9.585,7.872 9.585,7.641 L9.585,6.068 C9.585,5.837 9.771,5.650 10.000,5.650 C10.229,5.650 10.415,5.837 10.415,6.068 L10.415,7.641 C10.415,7.872 10.229,8.059 10.000,8.059 ZM10.000,4.914 C9.770,4.914 9.585,4.727 9.585,4.496 L9.585,2.923 C9.585,2.692 9.771,2.505 10.000,2.505 C10.229,2.505 10.415,2.692 10.415,2.923 L10.415,4.496 C10.415,4.727 10.229,4.914 10.000,4.914 ZM7.659,10.418 L6.098,10.418 C5.868,10.418 5.682,10.231 5.682,10.000 C5.682,9.769 5.868,9.581 6.098,9.581 L7.659,9.581 C7.888,9.581 8.074,9.769 8.074,10.000 C8.074,10.231 7.888,10.418 7.659,10.418 ZM4.537,10.418 L2.976,10.418 C2.747,10.418 2.561,10.231 2.561,10.000 C2.561,9.769 2.747,9.581 2.976,9.581 L4.537,9.581 C4.767,9.581 4.953,9.769 4.953,10.000 C4.953,10.231 4.767,10.418 4.537,10.418 ZM10.000,11.940 C10.229,11.940 10.415,12.127 10.415,12.358 L10.415,13.931 C10.415,14.162 10.229,14.349 10.000,14.349 C9.770,14.349 9.585,14.162 9.585,13.931 L9.585,12.358 C9.585,12.127 9.771,11.940 10.000,11.940 ZM10.000,15.085 C10.229,15.085 10.415,15.272 10.415,15.503 L10.415,17.075 C10.415,17.307 10.229,17.494 10.000,17.494 C9.770,17.494 9.585,17.307 9.585,17.075 L9.585,15.503 C9.585,15.272 9.771,15.085 10.000,15.085 Z" />
+											</svg>
+										</button>
+										<button class="product-page__button product-page__button--list" type="button">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px"
+												height="19px">
+												<path fill-rule="evenodd" fill="rgb(116, 123, 134)"
+													d="M19.723,15.636 L7.511,15.636 C7.349,15.636 7.218,15.507 7.218,15.348 C7.218,15.190 7.349,15.061 7.511,15.061 L19.723,15.061 C19.885,15.061 20.016,15.190 20.016,15.348 C20.016,15.507 19.885,15.636 19.723,15.636 ZM19.723,10.724 L7.511,10.724 C7.349,10.724 7.218,10.595 7.218,10.436 C7.218,10.278 7.349,10.149 7.511,10.149 L19.723,10.149 C19.885,10.149 20.016,10.278 20.016,10.436 C20.016,10.595 19.885,10.724 19.723,10.724 ZM19.723,8.882 L7.511,8.882 C7.349,8.882 7.218,8.753 7.218,8.594 C7.218,8.436 7.349,8.307 7.511,8.307 L19.723,8.307 C19.885,8.307 20.016,8.436 20.016,8.594 C20.016,8.753 19.885,8.882 19.723,8.882 ZM19.723,3.970 L7.511,3.970 C7.349,3.970 7.218,3.842 7.218,3.683 C7.218,3.524 7.349,3.395 7.511,3.395 L19.723,3.395 C19.885,3.395 20.016,3.524 20.016,3.683 C20.016,3.842 19.885,3.970 19.723,3.970 ZM19.723,2.129 L7.511,2.129 C7.349,2.129 7.218,1.999 7.218,1.841 C7.218,1.682 7.349,1.553 7.511,1.553 L19.723,1.553 C19.885,1.553 20.016,1.682 20.016,1.841 C20.016,1.999 19.885,2.129 19.723,2.129 ZM4.693,19.013 L0.936,19.013 C0.429,19.013 0.016,18.608 0.016,18.111 L0.016,14.427 C0.016,13.930 0.429,13.526 0.936,13.526 L4.693,13.526 C5.201,13.526 5.613,13.930 5.613,14.427 L5.613,18.111 C5.613,18.608 5.201,19.013 4.693,19.013 ZM5.026,14.427 C5.026,14.247 4.877,14.101 4.693,14.101 L0.936,14.101 C0.753,14.101 0.603,14.247 0.603,14.427 L0.603,18.111 C0.603,18.291 0.753,18.437 0.936,18.437 L4.693,18.437 C4.877,18.437 5.026,18.291 5.026,18.111 L5.026,14.427 ZM4.693,12.259 L0.936,12.259 C0.429,12.259 0.016,11.855 0.016,11.358 L0.016,7.674 C0.016,7.176 0.429,6.772 0.936,6.772 L4.693,6.772 C5.201,6.772 5.613,7.176 5.613,7.674 L5.613,11.358 C5.613,11.855 5.201,12.259 4.693,12.259 ZM5.026,7.674 C5.026,7.493 4.877,7.347 4.693,7.347 L0.936,7.347 C0.753,7.347 0.603,7.493 0.603,7.674 L0.603,11.358 C0.603,11.537 0.753,11.684 0.936,11.684 L4.693,11.684 C4.877,11.684 5.026,11.537 5.026,11.358 L5.026,7.674 ZM4.693,5.505 L0.936,5.505 C0.429,5.505 0.016,5.101 0.016,4.604 L0.016,0.920 C0.016,0.423 0.429,0.018 0.936,0.018 L4.693,0.018 C5.201,0.018 5.613,0.423 5.613,0.920 L5.613,4.604 C5.613,5.101 5.201,5.505 4.693,5.505 ZM5.026,0.920 C5.026,0.740 4.877,0.594 4.693,0.594 L0.936,0.594 C0.753,0.594 0.603,0.740 0.603,0.920 L0.603,4.604 C0.603,4.783 0.753,4.930 0.936,4.930 L4.693,4.930 C4.877,4.930 5.026,4.783 5.026,4.604 L5.026,0.920 ZM7.511,16.902 L19.723,16.902 C19.885,16.902 20.016,17.031 20.016,17.190 C20.016,17.349 19.885,17.478 19.723,17.478 L7.511,17.478 C7.349,17.478 7.218,17.349 7.218,17.190 C7.218,17.031 7.349,16.902 7.511,16.902 Z" />
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
-				</div>
 
-				<section class="product-page__wrapper">
-					<div class="container">
-						<div class="product-page__inner">
+					<div class="product-page__wrapper">
+						<div class="container">
+							<div class="product-page__inner">
 
-							<aside class="product-page__aside aside">
+								<aside class="product-page__aside aside">
 
-								<div class="aside__box">
-									<div class="aside__title lnr lnr-chevron-down">Categories</div>
-									<ul class="aside__list">
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">Wordpress</a>
-											<span class="aside__number">35</span>
-										</li>
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">Landing Page</a>
-											<span class="aside__number">45</span>
-										</li>
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">Psd Template</a>
-											<span class="aside__number">13</span>
-										</li>
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">Plugins</a>
-											<span class="aside__number">08</span>
-										</li>
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">HTML Template</a>
-											<span class="aside__number">34</span>
-										</li>
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">Components</a>
-											<span class="aside__number">78</span>
-										</li>
-										<li class="aside__item">
-											<a class="aside__link lnr lnr-chevron-right" href="#">Joomla Template</a>
-											<span class="aside__number">26</span>
-										</li>
-									</ul>
+									<div class="aside__box">
+										<button class="aside__title lnr lnr-chevron-down" type="button">Categories</button>
+										<ul class="aside__list">
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-wordpress">
+													<span class="aside__name lnr lnr-chevron-right">Wordpress</span>
+													<span class="aside__number">35</span>
+												</button>
+											</li>
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-page">
+													<span class="aside__name lnr lnr-chevron-right">Landing Page</span>
+													<span class="aside__number">45</span>
+												</button>
+											</li>
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-psd">
+													<span class="aside__name lnr lnr-chevron-right">PSD Template</span>
+													<span class="aside__number">13</span>
+												</button>
+											</li>
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-plugin">
+													<span class="aside__name lnr lnr-chevron-right">Plugins</span>
+													<span class="aside__number">08</span>
+												</button>
+											</li>
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-html">
+													<span class="aside__name lnr lnr-chevron-right">HTML Template</span>
+													<span class="aside__number">35</span>
+												</button>
+											</li>
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-components">
+													<span class="aside__name lnr lnr-chevron-right">Components</span>
+													<span class="aside__number">78</span>
+												</button>
+											</li>
+											<li class="aside__item">
+												<button class="aside__link" type="button" data-filter=".category-joomla">
+													<span class="aside__name lnr lnr-chevron-right">Joomla Template</span>
+													<span class="aside__number">26</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+
+									<div class="aside__box">
+										<button class="aside__title lnr lnr-chevron-down" type="button">Filter Products</button>
+										<form class="aside__list">
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-1" name="radio" value="Trending Products">
+												<label class="aside__list-label" for="radio-1" data-sort="random">Trending Products</label>
+											</div>
+
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-2" name="radio" value="Popular Products">
+												<label class="aside__list-label" for="radio-2" data-sort="random">Popular Products</label>
+											</div>
+
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-3" name="radio" value="New Products">
+												<label class="aside__list-label" for="radio-3" data-sort="random">New Products</label>
+											</div>
+
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-4" name="radio" value="Best Seller">
+												<label class="aside__list-label" for="radio-4" data-sort="random">Best Seller</label>
+											</div>
+
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-5" name="radio" value="Best Rating">
+												<label class="aside__list-label" for="radio-5" data-sort="random">Best Rating</label>
+											</div>
+
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-6" name="radio" value="Low Price">
+												<label class="aside__list-label" for="radio-6" data-sort="random">Low Price</label>
+											</div>
+
+											<div class="aside__list-item">
+												<input class="aside__list-input" type="radio" id="radio-7" name="radio" value="High Price">
+												<label class="aside__list-label" for="radio-7" data-sort="random">High Price</label>
+											</div>
+
+										</form>
+									</div>
+
+									<div class="aside__box">
+										<button class="aside__title lnr lnr-chevron-down" type="button">Pricing Range</button>
+										<ul class="aside__list">
+											<li class="aside__item">
+												<form class="aside__form">
+													<input type="text" class="js-range-slider" name="my_range" value="" />
+													<button class="aside__btn btn btn--blue" type="submit">Search Update</button>
+												</form>
+											</li>
+										</ul>
+
+
+									</div>
+								</aside>
+
+								<div class="product-page__content">
+
+									<section class="product product--mini mix category-new category-wordpress">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-popular category-page category-trending">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-new category-plugin">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-popular category-psd">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-new category-page">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-popular category-html category-trending">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-new category-joomla">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-popular category-joomla">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-new category-html">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-new category-plugin">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-popular category-components">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
+									<section class="product product--mini mix category-new category-psd">
+										<div class="product__item">
+											<div class="product__image">
+												<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
+											</div>
+											<div class="product__content">
+												<a class="product__category icon-wordpress" href="#">WordPress</a>
+												<button class="product__basket lnr lnr-cart" type="button">634</button>
+
+												<div class="product__block product__block--info">
+													<a class="product__title" href="#">Best YouTube Channels
+														For UI/UX Designers
+													</a>
+													<div class="product__text">
+														Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+													</div>
+												</div>
+
+												<div class="product__block product__block--items">
+													<a class="product__user" href="#">
+														<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
+														<span class="product__user-name">Themepert</span>
+													</a>
+													<div class="product__box">
+														<div class="product__stars">
+															<div class="rate-star"></div>
+															<span class="product__stars-number">34</span>
+														</div>
+														<span class="product__like lnr lnr-heart">90 loves</span>
+														<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
+													</div>
+												</div>
+												<div class="product__block product__block--basket">
+													<div class="product__items">
+														<span class="product__price">$10 - $50</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+
 								</div>
+							</div>
 
-								<div class="aside__box">
-									<div class="aside__title lnr lnr-chevron-down">Filter Products</div>
-									<ul class="aside__list">
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-filter=".category-trending">Trending
-												Products</button>
-										</li>
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-filter=".category-popular">Popular
-												Products</button>
-										</li>
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-filter=".category-new">New Products</button>
-										</li>
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-sort="random">Best Seller</button>
-										</li>
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-sort="random">Best Rating</button>
-										</li>
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-sort="random">Low Price</button>
-										</li>
-										<li class="aside__item">
-											<button class="aside__link aside__link--filter icon-circle-o" type="button" data-sort="random">High Price</button>
-										</li>
-									</ul>
-								</div>
-
-								<div class="aside__box">
-									<div class="aside__title lnr lnr-chevron-down">Pricing Range</div>
-									<ul class="aside__list">
-										<li class="aside__item">
-											<form class="aside__form">
-												<input type="text" class="js-range-slider" name="my_range" value="" />
-												<button class="aside__btn btn btn--blue" type="submit">Search Update</button>
-											</form>
-										</li>
-									</ul>
-
-
-								</div>
-							</aside>
-
-							<div class="product-page__content">
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-popular category-trending">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-popular">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-popular category-trending">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-popular">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-popular">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
-
-								<section class="product product--mini mix category-new">
-									<div class="product__item">
-										<div class="product__image">
-											<img class="product__img" src="images/content/wordpress.jpg" alt="wordpress">
-										</div>
-										<div class="product__content">
-											<a class="product__category icon-wordpress" href="#">WordPress</a>
-											<button class="product__basket lnr lnr-cart" type="button">634</button>
-
-											<div class="product__block product__block--info">
-												<a class="product__title" href="#">Best YouTube Channels
-													For UI/UX Designers
-												</a>
-												<div class="product__text">
-													Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-												</div>
-											</div>
-
-											<div class="product__block product__block--items">
-												<a class="product__user" href="#">
-													<img class="product__user-icon" src="images/icons/user.jpg" alt="user">
-													<span class="product__user-name">Themepert</span>
-												</a>
-												<div class="product__box">
-													<div class="product__stars">
-														<div class="rate-star"></div>
-														<span class="product__stars-number">34</span>
-													</div>
-													<span class="product__like lnr lnr-heart">90 loves</span>
-													<a class="product__commit lnr lnr-bubble" href="#">90 Comments</a>
-												</div>
-											</div>
-											<div class="product__block product__block--basket">
-												<div class="product__items">
-													<span class="product__price">$10 - $50</span>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</section>
+							<div class="pagination">
+								<ul class="pagination__list">
+									<li class="pagination__item">
+										<a class="pagination__link pagination__link--disabled lnr lnr-arrow-left" href="#"></a>
+									</li>
+									<li class="pagination__item">
+										<span class="pagination__link pagination__link--active">1</span>
+									</li>
+									<li class="pagination__item">
+										<a class="pagination__link active" href="#">2</a>
+									</li>
+									<li class="pagination__item">
+										<a class="pagination__link active" href="#">...</a>
+									</li>
+									<li class="pagination__item">
+										<a class="pagination__link active" href="#">8</a>
+									</li>
+									<li class="pagination__item">
+										<a class="pagination__link lnr lnr-arrow-right" href="#"></a>
+									</li>
+								</ul>
 
 							</div>
-						</div>
-
-						<div class="pagination">
-							<ul class="pagination__list">
-								<li class="pagination__item">
-									<button class="pagination__btn pagination__btn--disabled lnr lnr-arrow-left"></button>
-								</li>
-								<li class="pagination__item">
-									<span class="pagination__link pagination__link--active">1</span>
-								</li>
-								<li class="pagination__item">
-									<a class="pagination__link active" href="#">2</a>
-								</li>
-								<li class="pagination__item">
-									<a class="pagination__link active" href="#">...</a>
-								</li>
-								<li class="pagination__item">
-									<a class="pagination__link active" href="#">8</a>
-								</li>
-								<li class="pagination__item">
-									<button class="pagination__btn lnr lnr-arrow-right"></button>
-								</li>
-							</ul>
 
 						</div>
-
 					</div>
+
 				</section>
 
 
@@ -1423,9 +1451,9 @@
 								Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
 							</div>
 
-							<form class="footer__form header__form">
-								<input class="footer__form-email header__form-search" type="email" placeholder="Enter email" required>
-								<button class="footer__form-btn header__form-btn" type="submit">Submit</button>
+							<form class="footer__form mini-search">
+								<input class="mini-search__input" type="email" placeholder="Enter email" required>
+								<button class="mini-search__btn lnr lnr-magnifier" type="submit">Submit</button>
 							</form>
 
 							<ul class="footer__sosial sosial">
@@ -1460,9 +1488,9 @@
 					<div class="footer__inner">
 						<div class="footer__copy">
 							©2017
-							<a class="footer__copy-link footer__link" href="#">MartPlace.</a>
+							<a class="footer__copy-link" href="#">MartPlace.</a>
 							All rights reserved. Created by
-							<a class="footer__copy-link footer__link" href="#">AazzTech</a>
+							<a class="footer__copy-link" href="#">AazzTech</a>
 						</div>
 					</div>
 				</div>

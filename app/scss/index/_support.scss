@@ -6,6 +6,19 @@
 		flex-wrap: wrap;
 	}
 
+	&__image {
+		height: 120px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 150px 120px;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-size: 24px;
+		color: #000;
+	}
+
 	&__item {
 		text-align: center;
 		padding: 64px 0;
@@ -27,47 +40,34 @@
 				display: none;
 			}
 		}
-	}
 
-	&__image {
-		height: 120px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 150px 120px;
-		margin-bottom: 25px;
-	}
+		&--blue {
+			.support__image {
+				background-image: url(../images/support/Icon_1.png);
+			}
 
-	&__text {
-		font-size: 24px;
-		color: #000;
-	}
+			.support__color {
+				color: $blue;
+				transition: all 0.3s;
 
-	&__item--blue {
-		.support__image {
-			background-image: url(../images/support/Icon_1.png);
-		}
-
-		.support__color {
-			color: $blue;
-			transition: all 0.3s;
-
-			&:hover {
-				text-shadow: 1px 1px 1px $blue;
+				&:hover {
+					text-shadow: 1px 1px 1px $blue;
+				}
 			}
 		}
-	}
 
-	&__item--violet {
-		.support__image {
-			background-image: url(../images/support/Icon_2.png);
-		}
+		&--violet {
+			.support__image {
+				background-image: url(../images/support/Icon_2.png);
+			}
 
-		.support__color {
-			color: $violet;
-			transition: all 0.3s;
+			.support__color {
+				color: $violet;
+				transition: all 0.3s;
 
-			&:hover {
-				text-shadow: 1px 1px 1px $violet;
+				&:hover {
+					text-shadow: 1px 1px 1px $violet;
+				}
 			}
 		}
 	}

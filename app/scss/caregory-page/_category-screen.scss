@@ -3,12 +3,20 @@
 		padding: 85px 0 30px;
 		color: #fff;
 		text-align: center;
+
+		@media (max-width: 992px) {
+			padding: 50px 0 30px;
+		}
 	}
 
 	&__title {
 		@include font400;
 		font-size: 26px;
 		margin-bottom: 30px;
+
+		@media (max-width: 768px) {
+			font-size: 20px;
+		}
 
 		span {
 			@include font500
@@ -18,22 +26,33 @@
 	&__form {
 		width: 555px;
 		margin: 0 auto 35px;
-	}
 
-	&__input {
-		width: 555px;
-		height: 55px;
-		padding-right: 120px;
-	}
+		@media (max-width: 576px) {
+			width: 100%;
+		}
+		.mini-search {
+			&__input {
+				width: 100%;
+				padding-right: 115px;
+				@media (max-width: 576px) {
+					padding-right: 75px;
+				}
+			}
+			&__btn {
+				width: 110px;
+				font-size: 15px;
+				&::before {
+					display: none;
+				}
 
-	&__btn {
-		font-size: 15px;
-		color: #fff;
-		padding: 19px 30px;
-		@include font400;
-
-		&::before {
-			display: none;
+				@media (max-width: 576px) {
+					width: 70px;
+					font-size: 0;
+					&::before {
+						display: block;
+					}
+				}
+			}
 		}
 	}
 }

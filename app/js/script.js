@@ -9,7 +9,7 @@ $(function() {
 			{
 				breakpoint: 577,
 				settings: {
-					autoplay: true
+					// autoplay: true
 				}
 			}		
 		]
@@ -38,15 +38,15 @@ $(function() {
 				breakpoint: 577,
 				settings: {
 					slidesToShow: 1,
-					autoplay: true
+					// autoplay: true
 				}
 			}
 		]
 	})
 
 	$('.clients__inner').slick({
-		prevArrow: '<button type="button" class="clients-arrow slick-arrow slick-arrow--prev lnr lnr-chevron-left">Previous</button>',
-		nextArrow: '<button type="button" class="clients-arrow slick-arrow slick-arrow--next lnr lnr-chevron-right">Next</button>',
+		prevArrow: '<button type="button" class="clients-arrow clients-arrow--prev lnr lnr-chevron-left">Previous</button>',
+		nextArrow: '<button type="button" class="clients-arrow clients-arrow--next lnr lnr-chevron-right">Next</button>',
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		responsive: [
@@ -67,7 +67,7 @@ $(function() {
 				breakpoint: 577,
 				settings: {
 					slidesToShow: 1,
-					autoplay: true,
+					// autoplay: true,
 					appendArrows: $('.clients__arrows')
 				}
 			}

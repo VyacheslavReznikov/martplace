@@ -114,6 +114,82 @@ a {
 	}
 }
 
+//mini-search
+.mini-search {
+	position: relative;
+	width: 360px;
+
+	&__input {
+		padding-left: 30px;
+		padding-right: 85px;
+		width: 100%;
+		height: 50px;
+		border-radius: 40px;
+		border: 1px solid #cacaca;
+		outline: transparent;
+
+		&::placeholder {
+			font-size: 15px;
+			line-height: 30px;
+			color: #898f96;
+		}
+
+		&:focus,
+		&:active {
+			border-color: $blue;
+		}
+	}
+
+	&__btn {
+		cursor: pointer;
+		position: absolute;
+		width: 70px;
+		height: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		border-radius: 40px;
+		padding: 14px 5px;
+		border: 1px solid transparent;
+		outline: transparent;
+		background-color: $blue;
+		color: #fff;
+		font-size: 0;
+		transition: all 0.3s;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 15px;
+			color: #fff;
+		}
+
+		&:hover {
+			background-color: lighten($blue, 20%);
+		}
+
+		&:focus,
+		&:active {
+			border-color: darken($blue, 50%);
+			background-color: lighten($blue, 10%);
+		}
+	}
+
+
+}
+
+@media (max-width: 576px) {
+	.mini-search {
+		width: 100%;
+
+		&__input {
+			width: 100%;
+		}
+	}
+}
+
 // общие стили для кнопок и ссылок
 .btn {
 	cursor: pointer;
@@ -121,8 +197,9 @@ a {
 	text-align: center;
 	border: 1px solid #fff;
 	border-radius: 40px;
-	padding: 20px 10px;
+	padding: 15px 10px;
 	min-width: 190px;
+	height: 55px;
 	background-color: transparent;
 	color: #fff;
 	@include font400;
@@ -148,7 +225,8 @@ a {
 
 	&--small {
 		min-width: 130px;
-		padding: 14px 10px;
+		height: 45px;
+		padding: 10px 5px;
 	}
 
 	&--blue {
@@ -204,12 +282,16 @@ a {
 	&:focus {
 		border-color: $sky;
 	}
+
+	&--blue {
+		background-color: $blue;
+		color: #fff;
+	}
 }
 
 //sliders arrows
 .weekly-arrow,
-.followers-arrow,
-.clients-arrow {
+.followers-arrow {
 	cursor: pointer;
 	font-size: 0;
 	text-align: center;
@@ -241,14 +323,14 @@ a {
 	}
 }
 
-.weekly-arrow.slick-arrow--prev,
-.followers-arrow.slick-arrow--prev {
+.slick-arrow--prev,
+.slick-arrow--prev {
 	border-bottom-left-radius: 40px;
 	border-top-left-radius: 40px;
 }
 
-.weekly-arrow.slick-arrow--next,
-.followers-arrow.slick-arrow--next {
+.slick-arrow--next,
+.slick-arrow--next {
 	border-bottom-right-radius: 40px;
 	border-top-right-radius: 40px;
 }
@@ -269,6 +351,13 @@ a {
 }
 
 .clients-arrow {
+	cursor: pointer;
+	font-size: 0;
+	text-align: center;
+	outline: transparent;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	z-index: 3;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -276,10 +365,12 @@ a {
 	height: 50px;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
-	border-radius: 50%;
-	z-index: 3;
 	transition: all 0.3s;
-	border: 1px solid transparent;
+
+	&::before {
+		color: #fff;
+		font-size: 15px;
+	}
 
 	&:hover {
 		background-color: $sky;
@@ -292,29 +383,27 @@ a {
 	&:active {
 		background-color: lighten($sky, 20%);
 	}
-}
 
-.clients-arrow.slick-arrow--prev {
-	left: -25px;
-
-	&::before {
-		color: $violet;
-	}
-}
-
-.clients-arrow.slick-arrow--next {
-	right: -25px;
-
-	&::before {
-		color: $blue;
-	}
-}
-
-.clients-arrow.slick-arrow--prev,
-.clients-arrow.slick-arrow--next {
-	&:hover {
+	&--prev:hover,
+	&--next:hover {
 		&::before {
 			color: #fff;
+		}
+	}
+
+	&--prev {
+		left: -25px;
+
+		&::before {
+			color: $violet;
+		}
+	}
+
+	&--next {
+		right: -25px;
+
+		&::before {
+			color: $blue;
 		}
 	}
 }
@@ -375,7 +464,7 @@ a {
 		justify-content: center;
 	}
 
-	&__item {	
+	&__item {
 		padding-right: 17px;
 		margin-right: 7px;
 		position: relative;
@@ -407,7 +496,7 @@ a {
 }
 
 //pagination
-.pagination {	
+.pagination {
 	padding-bottom: 120px;
 	text-align: right;
 
@@ -422,6 +511,32 @@ a {
 		width: 50px;
 		height: 38px;
 		margin-right: 5px;
+
+		&:first-child,
+		&:last-child {
+			.pagination__link {
+				background-color: $violet;
+				color: #fff;
+
+				&:hover {
+					background-color: lighten($violet, 20%);
+				}
+		
+				&:focus {
+					border-color: #000;
+				}
+		
+				&:active {
+					background-color: darken($violet, 10%);
+				}
+
+				&--disabled {
+					background-color: #fff;
+					color: #000;
+					cursor: no-drop;
+				}
+			}
+		}
 
 		&:first-child {
 			margin-right: 20px;
@@ -456,11 +571,6 @@ a {
 			background-color: darken($violet, 10%);
 		}
 
-		&--disabled {
-			background-color: #fff;
-			color: #000;
-			cursor: no-drop;
-		}
 	}
 
 	&__link {
@@ -473,7 +583,7 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 0.3s;
+		transition: all 0.3s;	
 
 		&:hover {
 			background-color: lighten($blue, 40%);
@@ -542,11 +652,15 @@ a {
 	display: none;
 }
 
-.irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before {
+.irs--flat .irs-from:before,
+.irs--flat .irs-single:before,
+.irs--flat .irs-to:before {
 	display: none;
 }
 
-.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+.irs--flat .irs-from,
+.irs--flat .irs-single,
+.irs--flat .irs-to {
 	@include font500;
 	color: $violet;
 	font-size: 15px;
@@ -557,7 +671,9 @@ a {
 	border-radius: 40px;
 }
 
-.irs-from, .irs-single, .irs-to {
+.irs-from,
+.irs-single,
+.irs-to {
 	top: 55px;
 }
 
