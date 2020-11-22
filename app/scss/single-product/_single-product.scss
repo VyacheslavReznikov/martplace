@@ -1,0 +1,180 @@
+.single-product {
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+		max-width: 750px;
+		width: 100%;
+	}
+
+	&__item {
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 750px;
+		height: 430px;
+	}
+
+	&__buttons {
+		text-align: center;
+		padding: 30px;
+		border-bottom: 1px solid #cacaca;
+	}
+
+	&__btn {
+		margin: 0 15px;
+	}
+
+	&__footer {
+		padding: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__sosial {
+		margin-left: 5px;
+	}
+
+	&__tabs {}
+
+	&__aside {}
+}
+
+.tabs {
+	display: flex;
+
+	.tab {
+		cursor: pointer;
+		width: 100%;
+		text-align: center;
+		@include font400;
+		padding: 25px 5px;
+		border-bottom: 1px solid #cacaca;
+		border-right: 1px solid #cacaca;
+		transition: all 0.3s;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 0;
+			height: 3px;
+			background-color: $blue;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+
+		&.active {
+			border-bottom: none;
+			color: $blue;
+			transition: all 0.3s;
+
+			&::after {
+				width: 100%;
+				left: 0;
+			}
+		}
+
+		&__number {
+			@include font600;
+		}
+	}
+}
+
+.tab-item {
+	padding: 10px 30px 80px;
+	display: none;
+
+	&:first-child {
+		display: block;
+	}
+
+	&__title {
+		@include font400;
+		font-size: 28px;
+		padding: 60px 0 35px;
+		color: #000;
+	}
+
+	&__text {
+		@include font400;
+		font-size: 16px;
+		line-height: 30px;
+		color: #555;
+	}
+
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		color: #555;
+		margin-bottom: 10px;
+		position: relative;
+		padding-left: 30px;
+
+		&::before {
+			position: absolute;
+			left: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__box {
+
+		&--checked {
+			.tab-item {
+
+				&__item::before {
+					font-size: 14px;
+					font-weight: 300;
+				}
+			}
+		}
+
+		&--number {
+			.tab-item {
+				&__list {
+					counter-reset: myCounter;
+				}
+
+				&__item::before {
+					counter-increment: myCounter;
+					content: ""counter(myCounter) ".";
+					@include font500;
+				}
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 690px;
+		height: 1000px;
+	}
+}
+
+.active-tab {}
